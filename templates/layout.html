@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="%%LANG%%" dir="%%DIR%%">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>%%TITLE%%</title>
+<meta name="description" content="%%DESC%%">
+%%HEAD%%
+%%FONTS%%
+<style>
+%%CSS%%
+</style>
+</head>
+<body>
+%%SPRITE%%
+<header class="nav wrap">
+  <div class="nav-bar">
+    <a class="brand" href="%%HOME%%"><img src="/logo.png" alt="" width="44" height="44"><span>%%APP%%</span></a>
+    <div class="nav-right">
+      <details class="lang">
+        <summary aria-label="%%LANG_LABEL%%"><svg class="ico"><use href="#i-globe"/></svg>%%LANG_CODE%%</summary>
+        <nav class="lang-menu">%%LANG_LINKS%%</nav>
+      </details>
+      <a class="btn btn-primary js-download" href="#download">%%DOWNLOAD%%</a>
+    </div>
+  </div>
+</header>
+<main>
+%%MAIN%%
+</main>
+%%FOOTER%%
+<script>
+(() => {
+  const ua = navigator.userAgent;
+  const store = /iPhone|iPad|iPod|Macintosh.*Mobile/.test(ua) ? '%%APP_STORE%%' : /Android/.test(ua) ? '%%GOOGLE_PLAY%%' : null;
+  if (store) document.querySelectorAll('.js-download').forEach(a => { a.href = store; a.target = '_blank'; a.rel = 'noopener'; });
+  const lang = document.querySelector('.lang');
+  document.addEventListener('click', e => { if (lang.open && !lang.contains(e.target)) lang.open = false; });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lang.open = false; });
+  document.querySelectorAll('a[data-lang]').forEach(a => a.addEventListener('click', () => {
+    try { localStorage.setItem('rp-lang', a.dataset.lang); } catch (e) { /* storage unavailable */ }
+  }));
+})();
+</script>
+%%ANALYTICS%%
+</body>
+</html>

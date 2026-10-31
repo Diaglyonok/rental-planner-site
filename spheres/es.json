@@ -1,0 +1,128 @@
+{
+  "flats": {
+    "title": "Calendario de reservas para alquiler vacacional | Rental Planner",
+    "desc": "Calendario de reservas para estancias cortas y largas: llegadas, fianzas, limpieza, pagos y Airbnb, Booking.com y Agoda vía iCal. 2 unidades gratis.",
+    "h1": "Calendario de reservas para apartamentos y casas vacacionales",
+    "lead": "Todos tus apartamentos y todas las reservas en una pantalla. Llegadas, fianzas, pagos y limpieza entre huéspedes, sin hojas de cálculo.",
+    "features_title": "Todo lo que necesita un anfitrión",
+    "features": [
+      {"t": "Todas las unidades en un calendario", "d": "Cada apartamento, casa o habitación en una pantalla. Las fechas libres y la ocupación se ven de un vistazo."},
+      {"t": "Adiós a las reservas dobles", "d": "La app detecta las reservas que se solapan en fechas antes de que dos huéspedes llamen a la misma puerta."},
+      {"t": "Airbnb, Booking.com y Agoda", "d": "Con el plan Business, las reservas de los portales llegan por iCal, y tu calendario vuelve a los portales para bloquear las fechas ocupadas."},
+      {"t": "Pagos y fianzas", "d": "Anticipos, pagos pendientes y fianzas dentro de cada reserva. Ingresos y gastos por unidad en cualquier periodo."},
+      {"t": "Recordatorios y plantillas", "d": "Avisos de llegada, salida y pagos pendientes. Las plantillas de mensajes rellenan solas el nombre del huésped, las fechas y el importe."},
+      {"t": "Coanfitriones y gestores", "d": "Invita a un gestor o al propietario de una unidad y elige qué ve cada uno: reservas, finanzas, gastos o clientes."}
+    ],
+    "faq": [
+      {"q": "¿Sirve para estancias cortas y largas?", "a": "Sí. Una reserva puede durar una noche o varios meses: el calendario, los pagos y los recordatorios funcionan igual."},
+      {"q": "¿Cómo conecto Airbnb y Booking.com?", "a": "Con el plan Business, abre una unidad, toca «Sincronización de calendario» y pega el enlace iCal del portal. Las reservas aparecen en tu calendario en 20-30 minutos y después todo se actualiza solo."},
+      {"q": "¿Cuántos apartamentos puedo añadir gratis?", "a": "Hasta 2 unidades con las reservas del último mes, sin límite de tiempo. El plan Basic cubre hasta 12 unidades, y Premium y Business no tienen límite."},
+      {"q": "¿Un gestor también puede usar la app?", "a": "Sí. Con el plan Business, añade miembros del equipo por email y da a cada uno sus propias unidades y permisos: por ejemplo, reservas sin finanzas."}
+    ]
+  },
+  "cars": {
+    "title": "Software para alquiler de coches y gestión de flota | Rental Planner",
+    "desc": "Calendario de reservas para alquiler de coches: entrega, devolución, fianzas, kilometraje y pagos de cada coche. Ve qué coches están libres. 2 coches gratis.",
+    "h1": "Gestión de alquiler de coches en un solo calendario",
+    "lead": "Todos los coches de tu flota en una pantalla: quién lo tiene, cuándo vuelve, cuánto ha pagado y cuánto queda pendiente.",
+    "features_title": "Todo lo que necesita una flota de alquiler",
+    "features": [
+      {"t": "Calendario de flota", "d": "Cada coche es una unidad. Ve qué coches están libres cualquier día sin hacer una sola llamada."},
+      {"t": "Entrega y devolución", "d": "Horas de entrega y devolución, la fianza y el kilometraje según el cuentakilómetros, en la propia reserva."},
+      {"t": "Búsqueda de solapes", "d": "La app te avisa cuando dos reservas del mismo coche se solapan en fechas."},
+      {"t": "Pagos y gastos", "d": "Anticipos y pagos pendientes de cada alquiler, más los gastos de lavado, mantenimiento y publicidad."},
+      {"t": "Base de clientes", "d": "Clientes y campos de formulario propios, por ejemplo el número del carné de conducir. Todo queda guardado para el próximo alquiler."},
+      {"t": "Recordatorios", "d": "Avisos de entregas, devoluciones y pagos pendientes, para que no se te escape nada."}
+    ],
+    "faq": [
+      {"q": "¿Sirve para una flota pequeña?", "a": "Sí. Es gratis hasta 2 coches, el plan Basic cubre hasta 12 unidades, y Premium y Business no tienen límite."},
+      {"q": "¿Puedo controlar fianzas y kilometraje?", "a": "Sí. Elige alquiler de coches al abrir la app por primera vez y los nombres de los campos se adaptan: entrega, devolución, fianza y kilometraje en cada reserva."},
+      {"q": "¿Pueden varios gestores trabajar con la misma flota?", "a": "Sí, con el plan Business. Crea una empresa, añade gestores por email y da a cada uno sus propios coches y permisos."},
+      {"q": "¿Puedo usarla en el ordenador?", "a": "Sí. Hay versión web: entra con un código QR desde la app, sin contraseña. Tus datos y tu suscripción se comparten entre dispositivos."}
+    ]
+  },
+  "boats": {
+    "title": "Software de reservas para alquiler de barcos y yates | Rental Planner",
+    "desc": "Calendario de reservas para alquiler de barcos y yates: horas de salida y regreso, anticipos, número de personas y contacto del patrón. Móvil, tablet y web.",
+    "h1": "Calendario de reservas para alquiler de barcos y yates",
+    "lead": "Salidas, regresos y anticipos de cada barco en una pantalla. La ficha de la reserva guarda el número de personas y el contacto del patrón.",
+    "features_title": "Pensado para chárter y alquiler de barcos",
+    "features": [
+      {"t": "Cada barco en el calendario", "d": "Barcos, yates, tablas de paddle surf o motos de agua como unidades. Los huecos libres se ven al instante."},
+      {"t": "Salida y regreso", "d": "Horas de salida y regreso en cada reserva, para que en el pantalán se sepa quién sale y cuándo."},
+      {"t": "Grupo y patrón", "d": "Número de personas, contacto del patrón y tus propios campos en la ficha de la reserva."},
+      {"t": "Anticipos y pagos pendientes", "d": "Anticipo, pago pendiente y fianza de cada salida. Ingresos por barco en cualquier periodo."},
+      {"t": "Facturas en PDF", "d": "Con el plan Premium, envía al cliente una factura cuidada con tus condiciones y un código QR para pagar."},
+      {"t": "Funciona sin conexión", "d": "¿Sin cobertura en el muelle? Sigue trabajando en la app, todo se sincroniza en cuanto vuelves a tener conexión."}
+    ],
+    "faq": [
+      {"q": "¿También puedo alquilar tablas de paddle surf y motos de agua?", "a": "Sí. Una unidad puede ser cualquier cosa: un yate, un barco, una tabla de paddle surf o una moto de agua. Añade cada una y sigue sus reservas en el calendario."},
+      {"q": "¿Puedo enviar una factura al cliente?", "a": "Sí, con el plan Premium: factura y recibo en PDF con tus condiciones y un código QR para pagar. Envíalos al cliente o imprímelos."},
+      {"q": "¿Funciona sin internet?", "a": "Sí. El calendario y las reservas funcionan sin conexión, y todo se sincroniza en cuanto vuelves a estar en línea."},
+      {"q": "¿Es gratis?", "a": "Hasta 2 unidades con las reservas del último mes son gratis y sin límite de tiempo. Los planes de pago añaden más unidades, recordatorios, estadísticas y recibos."}
+    ]
+  },
+  "pets": {
+    "title": "Software para hotel de mascotas y residencia canina | Rental Planner",
+    "desc": "Calendario de reservas para hoteles de mascotas: casetas y habitaciones como unidades, nombre de la mascota, contacto del dueño y avisos. 2 unidades gratis.",
+    "h1": "Calendario de reservas para hoteles de mascotas",
+    "lead": "Casetas y habitaciones en un calendario, el nombre de la mascota y el contacto del dueño en cada reserva, y avisos de entrada y salida.",
+    "features_title": "Todo para una estancia tranquila",
+    "features": [
+      {"t": "Casetas y habitaciones como unidades", "d": "Cada caseta, cercado o habitación es una unidad. Las plazas libres de cualquier día se ven de un vistazo."},
+      {"t": "Mascota y dueño", "d": "El nombre de la mascota, el contacto del dueño y tus propios campos: raza, dieta o vacunas."},
+      {"t": "Avisos de entrada", "d": "La app te avisa a tiempo de entradas, salidas y estancias sin pagar."},
+      {"t": "Sin solapes", "d": "Dos mascotas no acabarán reservadas en la misma caseta: la app detecta las reservas que se solapan."},
+      {"t": "Pagos", "d": "Anticipos y pagos pendientes de cada estancia, gastos de comida y material, ingresos de cualquier periodo."},
+      {"t": "Acceso para el personal", "d": "Con el plan Business, da al personal acceso a las reservas y guárdate las finanzas para ti."}
+    ],
+    "faq": [
+      {"q": "¿Puedo apuntar raza, dieta y vacunas?", "a": "Sí. Añade tus propios campos de formulario y rellénalos para cada mascota. Los datos se guardan en la ficha del cliente para la próxima visita."},
+      {"q": "¿Mi personal puede usar la app?", "a": "Sí, con el plan Business. Añade al personal por email y elige qué ve cada uno: por ejemplo, reservas sin finanzas."},
+      {"q": "¿Puedo enviar un recibo al dueño?", "a": "Sí, con el plan Premium: factura y recibo en PDF con tus condiciones y un código QR para pagar."},
+      {"q": "¿Es gratis?", "a": "Hasta 2 unidades con las reservas del último mes son gratis y sin límite de tiempo. Añade más casetas con un plan de pago."}
+    ]
+  },
+  "tools": {
+    "title": "Software para alquiler de herramientas y maquinaria | Rental Planner",
+    "desc": "Controla el alquiler de herramientas y equipos: cada taladro y generador como unidad, quién lo tiene, cuándo vuelve y cuánto debe. 2 unidades gratis.",
+    "h1": "Control del alquiler de herramientas y equipos",
+    "lead": "Cada martillo percutor, generador y andamio como unidad propia: quién se lo llevó, cuándo vuelve y cuánto queda por pagar.",
+    "features_title": "Adiós a la libreta llena de nombres",
+    "features": [
+      {"t": "Cada equipo como unidad", "d": "Taladros, generadores, hormigoneras o andamios: cada equipo tiene su propia fila en el calendario."},
+      {"t": "Fechas de devolución", "d": "Cada alquiler tiene fecha de recogida y de devolución. La app te recuerda cuándo deben volver los equipos."},
+      {"t": "Fianzas y pagos pendientes", "d": "Fianza, anticipo y pago pendiente en cada reserva. Ve al instante quién te debe dinero."},
+      {"t": "Base de clientes", "d": "Clientes y campos de formulario propios: teléfono, documento de identidad o notas. Repetir un alquiler lleva segundos."},
+      {"t": "Búsqueda de solapes", "d": "La app detecta las reservas que se solapan en fechas, para no prometer el mismo generador a dos clientes."},
+      {"t": "Excel para el contable", "d": "Con el plan Premium, estadísticas completas y exportación a Excel para tu contabilidad."}
+    ],
+    "faq": [
+      {"q": "¿Hay un límite de equipos?", "a": "El plan Gratis cubre 2 unidades, Basic hasta 12, y Premium y Business no tienen límite."},
+      {"q": "¿La app me recuerda las devoluciones?", "a": "Sí, con el plan Premium: los avisos de devoluciones y pagos pendientes llegan a tiempo."},
+      {"q": "¿Puedo trabajar desde el ordenador?", "a": "Sí. Abre la versión web y entra con un código QR desde la app. Los datos se comparten en todos los dispositivos."},
+      {"q": "¿Puedo exportar los alquileres a Excel?", "a": "Sí, con el plan Premium, junto con las estadísticas completas."}
+    ]
+  },
+  "bikes": {
+    "title": "Software para alquiler de motos, scooters y bicis | Rental Planner",
+    "desc": "Calendario de reservas para alquiler de motos, scooters y bicicletas: cada vehículo como unidad, fianzas, pagos y plantillas de mensajes. 2 unidades gratis.",
+    "h1": "Calendario de reservas para alquiler de motos y bicicletas",
+    "lead": "Alquiler de temporada sin hojas de cálculo: un calendario por vehículo, fianzas y pagos en cada reserva, y mensajes listos para tus clientes.",
+    "features_title": "Listo para la temporada",
+    "features": [
+      {"t": "Un calendario por vehículo", "d": "Motos, scooters y bicicletas como unidades. Los vehículos libres de cualquier día, de un vistazo."},
+      {"t": "Fianzas", "d": "Fianza, anticipo y pago pendiente en cada reserva, sin una libreta aparte."},
+      {"t": "Plantillas de mensajes", "d": "El nombre del cliente, las fechas y el importe se rellenan solos. Envíalo por Telegram o WhatsApp con un toque."},
+      {"t": "Recordatorios", "d": "Avisos de recogida, devolución y pagos pendientes, para que ninguna moto desaparezca del calendario."},
+      {"t": "Ingresos por vehículo", "d": "Descubre qué moto gana más y en qué se va el dinero: ingresos y gastos por unidad en cualquier periodo."},
+      {"t": "Equipo", "d": "Con el plan Business, los gestores ven las reservas y tú decides quién ve las finanzas."}
+    ],
+    "faq": [
+      {"q": "¿Sirve para un pequeño alquiler de temporada?", "a": "Sí. Empieza gratis con 2 unidades, el plan Basic cubre hasta 12, y Premium y Business no tienen límite."},
+      {"q": "¿Puedo ver qué moto gana más?", "a": "Sí. Las estadísticas muestran los ingresos y gastos de cada unidad en cualquier periodo."},
+      {"q": "¿Cómo envío los datos del alquiler a un cliente?", "a": "Usa las plantillas de mensajes del plan Premium: el nombre, las fechas y el importe se rellenan solos, y lo envías por Telegram o WhatsApp con un toque."},
+      {"q": "¿Funciona en tablet?", "a": "Sí, hay soporte para tablets y versión web. Una sola cuenta funciona en todos tus dispositivos."}
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "flats": {
+    "title": "Vacation rental booking calendar app | Rental Planner",
+    "desc": "Booking calendar for short and long stays: check-ins, deposits, cleaning, payments and Airbnb, Booking.com and Agoda sync via iCal. Free for up to 2 units.",
+    "h1": "Booking calendar for apartments and vacation homes",
+    "lead": "See every apartment and every booking on one screen. Check-ins, deposits, payments and cleaning between guests, without spreadsheets.",
+    "features_title": "Everything a host needs",
+    "features": [
+      {"t": "All units in one calendar", "d": "Every apartment, house or room on one screen. Free dates and occupancy are visible at a glance."},
+      {"t": "No double bookings", "d": "The app finds bookings that overlap by dates before two guests show up at the same door."},
+      {"t": "Airbnb, Booking.com and Agoda", "d": "On the Business plan, bookings from booking sites arrive via iCal, and your calendar goes back to block the busy dates."},
+      {"t": "Payments and deposits", "d": "Prepayments, balances and deposits inside every booking. Revenue and expenses by unit for any period."},
+      {"t": "Reminders and templates", "d": "Check-in, check-out and unpaid balance reminders. Message templates fill in the guest's name, dates and amount."},
+      {"t": "Co-hosts and managers", "d": "Invite a manager or a unit owner and choose what each of them sees: bookings, finances, expenses or clients."}
+    ],
+    "faq": [
+      {"q": "Does it work for both short and long stays?", "a": "Yes. A booking can last one night or several months: the calendar, payments and reminders work the same way."},
+      {"q": "How do I connect Airbnb and Booking.com?", "a": "On the Business plan, open a unit, tap “Calendar sync” and paste the iCal link from the booking site. Bookings appear in your calendar within 20-30 minutes, then everything updates automatically."},
+      {"q": "How many apartments can I add for free?", "a": "Up to 2 units with bookings for the last month, with no time limit. The Basic plan covers up to 12 units, Premium and Business have no limit."},
+      {"q": "Can a manager use the app too?", "a": "Yes. On the Business plan, add team members by email and give each of them their own units and permissions: for example, bookings without finances."}
+    ]
+  },
+  "cars": {
+    "title": "Car rental software with a fleet booking calendar | Rental Planner",
+    "desc": "Booking calendar for car rental: pick-up and return, deposits, mileage and payments for every car. See which cars are free on any date. Free for up to 2 cars.",
+    "h1": "Car rental management in one calendar",
+    "lead": "Every car in your fleet on one screen: who has it, when it comes back, how much is paid and how much is still owed.",
+    "features_title": "Everything a rental fleet needs",
+    "features": [
+      {"t": "Fleet calendar", "d": "Each car is a separate unit. See which cars are free on any date without calling around."},
+      {"t": "Pick-up and return", "d": "Pick-up and return times, the deposit and mileage from meter readings right in the booking."},
+      {"t": "Overlap check", "d": "The app warns you when two bookings for the same car overlap by dates."},
+      {"t": "Payments and expenses", "d": "Prepayments and balances for every rental, plus expenses for washing, maintenance and advertising."},
+      {"t": "Client base", "d": "Clients and your own form fields, for example a driver's license number. Everything is saved for the next rental."},
+      {"t": "Reminders", "d": "Reminders about pick-ups, returns and unpaid balances, so nothing slips through."}
+    ],
+    "faq": [
+      {"q": "Does it suit a small fleet?", "a": "Yes. It is free for up to 2 cars, the Basic plan covers up to 12 units, and Premium and Business have no limit."},
+      {"q": "Can I track deposits and mileage?", "a": "Yes. Choose car rental on first launch and the field names adapt: pick-up, return, deposit and mileage are in every booking."},
+      {"q": "Can several managers work with one fleet?", "a": "Yes, on the Business plan. Create a company, add managers by email and give each of them their own cars and permissions."},
+      {"q": "Can I use it on a computer?", "a": "Yes. There is a web version: sign in with a QR code from the app, no password needed. Your data and subscription are shared across devices."}
+    ]
+  },
+  "boats": {
+    "title": "Boat and yacht rental booking software | Rental Planner",
+    "desc": "Booking calendar for boat and yacht rentals: departure and return times, prepayments, group size and the captain's contacts. Phone, tablet and web.",
+    "h1": "Booking calendar for boat and yacht rentals",
+    "lead": "Departures, returns and prepayments for every boat on one screen. The booking card keeps the group size and the captain's contacts.",
+    "features_title": "Made for charters and boat rentals",
+    "features": [
+      {"t": "Every boat in the calendar", "d": "Boats, yachts, SUP boards or jet skis as separate units. Free slots are visible at once."},
+      {"t": "Departure and return", "d": "Departure and return times in every booking, so the dock knows who is going out and when."},
+      {"t": "Group and captain", "d": "Group size, the captain's contacts and your own fields right in the booking card."},
+      {"t": "Prepayments and balances", "d": "Prepayment, balance and deposit for every trip. Revenue by boat for any period."},
+      {"t": "Invoices in PDF", "d": "On the Premium plan, send the client a neat invoice with your terms and a QR code for payment."},
+      {"t": "Works offline", "d": "No signal at the pier? Keep working in the app, everything syncs once you are back online."}
+    ],
+    "faq": [
+      {"q": "Can I rent out SUP boards and jet skis too?", "a": "Yes. A unit can be anything: a yacht, a boat, a SUP board or a jet ski. Add each one and track its bookings in the calendar."},
+      {"q": "Can I send the client an invoice?", "a": "Yes, on the Premium plan: a PDF invoice and receipt with your terms and a QR code for payment. Send it to the client or print it."},
+      {"q": "Does it work without internet?", "a": "Yes. The calendar and bookings work offline, and everything syncs once you are back online."},
+      {"q": "Is it free?", "a": "Up to 2 units with bookings for the last month are free with no time limit. Paid plans add more units, reminders, statistics and receipts."}
+    ]
+  },
+  "pets": {
+    "title": "Pet hotel and boarding kennel booking software | Rental Planner",
+    "desc": "Booking calendar for pet hotels and boarding kennels: kennels and rooms as units, pet names, owner contacts and check-in reminders. Free for up to 2 units.",
+    "h1": "Booking calendar for pet hotels",
+    "lead": "Kennels and rooms in one calendar, the pet's name and the owner's contacts in every booking, and reminders about check-ins and check-outs.",
+    "features_title": "Everything for a calm stay",
+    "features": [
+      {"t": "Kennels and rooms as units", "d": "Each kennel, enclosure or room is a separate unit. Free places on any date are visible at a glance."},
+      {"t": "Pet and owner", "d": "The pet's name, the owner's contacts and your own fields: breed, diet or vaccinations."},
+      {"t": "Check-in reminders", "d": "The app reminds you about check-ins, check-outs and unpaid stays on time."},
+      {"t": "No overlaps", "d": "Two pets will not end up booked into the same kennel: the app finds overlapping bookings."},
+      {"t": "Payments", "d": "Prepayments and balances for every stay, expenses for food and supplies, revenue for any period."},
+      {"t": "Staff access", "d": "On the Business plan, give staff access to bookings and keep the finances to yourself."}
+    ],
+    "faq": [
+      {"q": "Can I record breed, diet and vaccinations?", "a": "Yes. Add your own form fields and fill them in for every pet. The data is saved in the client card for the next visit."},
+      {"q": "Can my staff use the app?", "a": "Yes, on the Business plan. Add staff by email and choose what each of them sees: for example, bookings without finances."},
+      {"q": "Can I send the owner a receipt?", "a": "Yes, on the Premium plan: a PDF invoice and receipt with your terms and a QR code for payment."},
+      {"q": "Is it free?", "a": "Up to 2 units with bookings for the last month are free with no time limit. Add more kennels on a paid plan."}
+    ]
+  },
+  "tools": {
+    "title": "Tool and equipment rental tracking software | Rental Planner",
+    "desc": "Track tool and equipment rentals: every drill and generator as a unit, who took it, when it comes back and how much is owed. Free for up to 2 units.",
+    "h1": "Tool and equipment rental tracking",
+    "lead": "Every hammer drill, generator and scaffold as a separate unit: who took it, when it comes back and how much is still owed.",
+    "features_title": "No more notebook with names",
+    "features": [
+      {"t": "Every item as a unit", "d": "Drills, generators, mixers or scaffolding: each item has its own row in the calendar."},
+      {"t": "Return dates", "d": "Each rental has a pick-up and return date. The app reminds you about equipment returns."},
+      {"t": "Deposits and balances", "d": "Deposit, prepayment and balance in every booking. See who still owes money at once."},
+      {"t": "Client base", "d": "Clients and your own form fields: phone, passport details or notes. Repeat rentals take seconds."},
+      {"t": "Overlap check", "d": "The app finds bookings that overlap by dates, so one generator is not promised to two clients."},
+      {"t": "Excel for the accountant", "d": "On the Premium plan, full statistics and Excel export for your accounting."}
+    ],
+    "faq": [
+      {"q": "Is there a limit on the number of items?", "a": "Free covers 2 units, Basic up to 12, and Premium and Business have no limit."},
+      {"q": "Does the app remind me about returns?", "a": "Yes, on the Premium plan: reminders about returns and unpaid balances arrive on time."},
+      {"q": "Can I work from a computer?", "a": "Yes. Open the web version and sign in with a QR code from the app. Data is shared across all devices."},
+      {"q": "Can I export rentals to Excel?", "a": "Yes, on the Premium plan, together with full statistics."}
+    ]
+  },
+  "bikes": {
+    "title": "Motorcycle, scooter and bike rental software | Rental Planner",
+    "desc": "Booking calendar for motorcycle, scooter and bicycle rentals: every vehicle as a unit, deposits, payments and message templates. Free for up to 2 units.",
+    "h1": "Booking calendar for motorbike and bicycle rentals",
+    "lead": "Seasonal rentals without spreadsheets: a calendar for every vehicle, deposits and payments in each booking, and ready-made messages for customers.",
+    "features_title": "Ready for the season",
+    "features": [
+      {"t": "Calendar for every vehicle", "d": "Motorbikes, scooters and bicycles as separate units. Free vehicles on any date at a glance."},
+      {"t": "Deposits", "d": "Deposit, prepayment and balance in every booking, without a separate notebook."},
+      {"t": "Message templates", "d": "The customer's name, dates and amount are filled in automatically. Send via Telegram or WhatsApp in one tap."},
+      {"t": "Reminders", "d": "Pick-up, return and unpaid balance reminders, so no bike goes missing from the schedule."},
+      {"t": "Revenue by vehicle", "d": "See which bike earns the most and where the money goes: revenue and expenses by unit for any period."},
+      {"t": "Team", "d": "On the Business plan, managers see bookings, and you decide who sees the finances."}
+    ],
+    "faq": [
+      {"q": "Does it suit a small seasonal rental?", "a": "Yes. Start with 2 units for free, the Basic plan covers up to 12, and Premium and Business have no limit."},
+      {"q": "Can I see which bike earns the most?", "a": "Yes. Statistics show revenue and expenses for every unit for any period."},
+      {"q": "How do I send rental details to a customer?", "a": "Use message templates on the Premium plan: the name, dates and amount are filled in, send it via Telegram or WhatsApp in one tap."},
+      {"q": "Does it work on a tablet?", "a": "Yes, there is tablet support and a web version. One account works on all your devices."}
+    ]
+  }
+}

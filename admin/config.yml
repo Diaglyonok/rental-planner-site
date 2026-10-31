@@ -1,0 +1,73 @@
+# Sveltia CMS: админка блога на /admin/. Документация: https://sveltiacms.app/en/docs
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: Diaglyonok/rental-planner-site
+  branch: main
+  # Вход через GitHub OAuth для нескольких авторов: разверни Sveltia CMS Authenticator
+  # (https://github.com/sveltia/sveltia-cms-auth) на Cloudflare Workers и укажи его адрес.
+  # Без этого в админку можно войти по personal access token GitHub.
+  # base_url: https://sveltia-cms-auth.<account>.workers.dev
+
+site_url: https://www.rentalplanner.io
+media_folder: assets/blog
+public_folder: /media/blog
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+i18n:
+  structure: multiple_folders
+  locales: [ru, en, de, es, fr, pt, tr, ar, he, th]
+  default_locale: ru
+  initial_locales: [ru]
+
+collections:
+  - name: blog
+    label: Блог
+    label_singular: Пост
+    folder: blog
+    extension: md
+    format: frontmatter
+    create: true
+    i18n: true
+    slug: '{{slug}}'
+    summary: '{{title}} ({{date}})'
+    sortable_fields: [date, title]
+    fields:
+      - label: Заголовок
+        name: title
+        widget: string
+        i18n: true
+        pattern: ["^[^\u2014\u2013]*$", "Без длинного тире: сборка сайта его не пропустит"]
+      - label: Описание для поиска
+        name: description
+        widget: text
+        i18n: true
+        hint: Одно предложение до 160 символов, его показывают поисковики
+        pattern: ["^[^\u2014\u2013]{1,160}$", "До 160 символов и без длинного тире"]
+      - label: Дата
+        name: date
+        widget: datetime
+        type: date
+        i18n: duplicate
+      - label: Обложка
+        name: cover
+        widget: image
+        required: false
+        i18n: duplicate
+      - label: Черновик
+        name: draft
+        widget: boolean
+        default: false
+        required: false
+        i18n: duplicate
+        hint: Черновики не попадают на сайт
+      - label: Текст
+        name: body
+        widget: richtext
+        i18n: true
+        hint: Заголовки, списки, ссылки, картинки и цитаты. Без длинного тире
+        pattern: ["^[^\u2014\u2013]*$", "Без длинного тире: сборка сайта его не пропустит"]

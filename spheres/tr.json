@@ -1,0 +1,128 @@
+{
+  "flats": {
+    "title": "Günlük kiralık daire rezervasyon takvimi | Rental Planner",
+    "desc": "Kısa ve uzun konaklamalar için takvim: girişler, depozito, temizlik, ödemeler ve iCal ile Airbnb, Booking.com, Agoda senkronizasyonu. 2 birim ücretsiz.",
+    "h1": "Daireler ve tatil evleri için rezervasyon takvimi",
+    "lead": "Tüm daireleriniz ve tüm rezervasyonlarınız tek ekranda. Girişler, depozitolar, ödemeler ve misafirler arası temizlik, tablolara gerek kalmadan.",
+    "features_title": "Bir ev sahibinin ihtiyacı olan her şey",
+    "features": [
+      {"t": "Tüm birimler tek takvimde", "d": "Her daire, ev veya oda tek ekranda. Boş tarihler ve doluluk bir bakışta görünür."},
+      {"t": "Çifte rezervasyona son", "d": "Uygulama, iki misafir aynı kapıya gelmeden önce tarihleri çakışan rezervasyonları bulur."},
+      {"t": "Airbnb, Booking.com ve Agoda", "d": "Business planında rezervasyon sitelerinden gelen rezervasyonlar iCal ile takviminize düşer, takviminiz de dolu tarihleri kapatmak için geri gider."},
+      {"t": "Ödemeler ve depozitolar", "d": "Ön ödemeler, bakiyeler ve depozitolar her rezervasyonun içinde. İstediğiniz dönem için birim bazında gelir ve giderler."},
+      {"t": "Hatırlatmalar ve şablonlar", "d": "Giriş, çıkış ve ödenmemiş bakiye hatırlatmaları. Mesaj şablonları misafirin adını, tarihleri ve tutarı otomatik doldurur."},
+      {"t": "Ortak ev sahipleri ve yöneticiler", "d": "Bir yöneticiyi veya mülk sahibini davet edin ve her birinin ne göreceğini seçin: rezervasyonlar, finans, giderler veya müşteriler."}
+    ],
+    "faq": [
+      {"q": "Kısa ve uzun süreli kiralamalar için uygun mu?", "a": "Evet. Bir rezervasyon tek gece de sürebilir, birkaç ay da: takvim, ödemeler ve hatırlatmalar aynı şekilde çalışır."},
+      {"q": "Airbnb ve Booking.com'u nasıl bağlarım?", "a": "Business planında bir birimi açın, “Takvim senkronizasyonu”na dokunun ve rezervasyon sitesinden aldığınız iCal bağlantısını yapıştırın. Rezervasyonlar 20-30 dakika içinde takviminizde görünür, sonrasında her şey otomatik güncellenir."},
+      {"q": "Kaç daireyi ücretsiz ekleyebilirim?", "a": "Son bir ayın rezervasyonlarıyla birlikte en fazla 2 birim, süre sınırı olmadan. Basic planı 12 birime kadar kapsar, Premium ve Business planlarında sınır yoktur."},
+      {"q": "Yönetici de uygulamayı kullanabilir mi?", "a": "Evet. Business planında ekip üyelerini e-posta ile ekleyin ve her birine kendi birimlerini ve yetkilerini verin: örneğin finans olmadan rezervasyonlar."}
+    ]
+  },
+  "cars": {
+    "title": "Araç kiralama programı ve filo rezervasyon takvimi | Rental Planner",
+    "desc": "Araç kiralama için rezervasyon takvimi: teslim ve iade, depozito, kilometre ve her aracın ödemeleri. Hangi aracın ne zaman boş olduğunu görün. 2 araç ücretsiz.",
+    "h1": "Araç kiralama yönetimi tek takvimde",
+    "lead": "Filonuzdaki her araç tek ekranda: kimde, ne zaman dönecek, ne kadarı ödendi ve ne kadar borç kaldı.",
+    "features_title": "Bir kiralama filosunun ihtiyacı olan her şey",
+    "features": [
+      {"t": "Filo takvimi", "d": "Her araç ayrı bir birimdir. Hangi aracın hangi tarihte boş olduğunu kimseyi aramadan görün."},
+      {"t": "Teslim ve iade", "d": "Teslim ve iade saatleri, depozito ve kilometre sayacından okunan kilometre doğrudan rezervasyonda."},
+      {"t": "Çakışma kontrolü", "d": "Aynı araç için iki rezervasyonun tarihleri çakıştığında uygulama sizi uyarır."},
+      {"t": "Ödemeler ve giderler", "d": "Her kiralama için ön ödemeler ve bakiyeler, ayrıca yıkama, bakım ve reklam giderleri."},
+      {"t": "Müşteri tabanı", "d": "Müşteriler ve kendi form alanlarınız, örneğin ehliyet numarası. Bir sonraki kiralama için her şey kayıtlı kalır."},
+      {"t": "Hatırlatmalar", "d": "Teslimler, iadeler ve ödenmemiş bakiyeler için hatırlatmalar, böylece hiçbir şey gözden kaçmaz."}
+    ],
+    "faq": [
+      {"q": "Küçük bir filo için uygun mu?", "a": "Evet. 2 araca kadar ücretsizdir, Basic planı 12 birime kadar kapsar, Premium ve Business planlarında sınır yoktur."},
+      {"q": "Depozito ve kilometreyi takip edebilir miyim?", "a": "Evet. İlk açılışta araç kiralamayı seçin, alan adları ona göre uyarlanır: teslim, iade, depozito ve kilometre her rezervasyonda yer alır."},
+      {"q": "Birden fazla yönetici aynı filoyla çalışabilir mi?", "a": "Evet, Business planında. Bir şirket oluşturun, yöneticileri e-posta ile ekleyin ve her birine kendi araçlarını ve yetkilerini verin."},
+      {"q": "Bilgisayarda kullanabilir miyim?", "a": "Evet. Web sürümü var: uygulamadaki QR kodla şifresiz giriş yapın. Verileriniz ve aboneliğiniz tüm cihazlarda ortaktır."}
+    ]
+  },
+  "boats": {
+    "title": "Tekne ve yat kiralama rezervasyon programı | Rental Planner",
+    "desc": "Tekne ve yat kiralama için rezervasyon takvimi: çıkış ve dönüş saatleri, ön ödemeler, grup büyüklüğü ve kaptanın iletişim bilgileri. Telefon, tablet ve web.",
+    "h1": "Tekne ve yat kiralama için rezervasyon takvimi",
+    "lead": "Her teknenin çıkışları, dönüşleri ve ön ödemeleri tek ekranda. Rezervasyon kartında grup büyüklüğü ve kaptanın iletişim bilgileri de yer alır.",
+    "features_title": "Yat kiralama ve tekne turları için tasarlandı",
+    "features": [
+      {"t": "Her tekne takvimde", "d": "Tekneler, yatlar, SUP'lar veya jet skiler ayrı birimler olarak. Boş zamanlar anında görünür."},
+      {"t": "Çıkış ve dönüş", "d": "Her rezervasyonda çıkış ve dönüş saatleri, böylece iskelede kimin ne zaman denize açılacağı belli olur."},
+      {"t": "Grup ve kaptan", "d": "Grup büyüklüğü, kaptanın iletişim bilgileri ve kendi alanlarınız doğrudan rezervasyon kartında."},
+      {"t": "Ön ödemeler ve bakiyeler", "d": "Her tur için ön ödeme, bakiye ve depozito. İstediğiniz dönem için tekne bazında gelir."},
+      {"t": "PDF faturalar", "d": "Premium planında müşteriye koşullarınızı ve ödeme QR kodunu içeren düzgün bir fatura gönderin."},
+      {"t": "Çevrimdışı çalışır", "d": "İskelede telefon çekmiyor mu? Uygulamada çalışmaya devam edin, internete bağlandığınızda her şey senkronize olur."}
+    ],
+    "faq": [
+      {"q": "SUP ve jet ski de kiraya verebilir miyim?", "a": "Evet. Birim her şey olabilir: yat, tekne, SUP ya da jet ski. Her birini ekleyin ve rezervasyonlarını takvimde takip edin."},
+      {"q": "Müşteriye fatura gönderebilir miyim?", "a": "Evet, Premium planında: koşullarınızı ve ödeme QR kodunu içeren PDF fatura ve makbuz. Müşteriye gönderin veya yazdırın."},
+      {"q": "İnternetsiz çalışır mı?", "a": "Evet. Takvim ve rezervasyonlar çevrimdışı çalışır, internete yeniden bağlandığınızda her şey senkronize olur."},
+      {"q": "Ücretsiz mi?", "a": "En fazla 2 birim ve son bir ayın rezervasyonları süre sınırı olmadan ücretsizdir. Ücretli planlar daha fazla birim, hatırlatmalar, istatistikler ve makbuzlar ekler."}
+    ]
+  },
+  "pets": {
+    "title": "Pet otel ve hayvan pansiyonu rezervasyon programı | Rental Planner",
+    "desc": "Pet otel ve hayvan pansiyonu için rezervasyon takvimi: kulübeler ve odalar birim olarak, evcil hayvan adı, sahip bilgileri, hatırlatmalar. 2 birim ücretsiz.",
+    "h1": "Pet oteller için rezervasyon takvimi",
+    "lead": "Kulübeler ve odalar tek takvimde, her rezervasyonda evcil hayvanın adı ve sahibinin iletişim bilgileri, giriş ve çıkış hatırlatmaları.",
+    "features_title": "Huzurlu bir konaklama için her şey",
+    "features": [
+      {"t": "Birim olarak kulübeler ve odalar", "d": "Her kulübe, padok veya oda ayrı bir birimdir. Herhangi bir tarihteki boş yerler bir bakışta görünür."},
+      {"t": "Evcil hayvan ve sahibi", "d": "Evcil hayvanın adı, sahibinin iletişim bilgileri ve kendi alanlarınız: cins, beslenme veya aşılar."},
+      {"t": "Giriş hatırlatmaları", "d": "Uygulama girişleri, çıkışları ve ödenmemiş konaklamaları zamanında hatırlatır."},
+      {"t": "Çakışma yok", "d": "İki evcil hayvan aynı kulübeye yazılmaz: uygulama çakışan rezervasyonları bulur."},
+      {"t": "Ödemeler", "d": "Her konaklama için ön ödemeler ve bakiyeler, mama ve malzeme giderleri, istediğiniz dönemin geliri."},
+      {"t": "Personel erişimi", "d": "Business planında personele rezervasyonlara erişim verin, finansı yalnızca siz görün."}
+    ],
+    "faq": [
+      {"q": "Cins, beslenme ve aşı bilgilerini kaydedebilir miyim?", "a": "Evet. Kendi form alanlarınızı ekleyin ve her evcil hayvan için doldurun. Bilgiler bir sonraki ziyaret için müşteri kartında saklanır."},
+      {"q": "Personelim uygulamayı kullanabilir mi?", "a": "Evet, Business planında. Personeli e-posta ile ekleyin ve her birinin ne göreceğini seçin: örneğin finans olmadan rezervasyonlar."},
+      {"q": "Hayvan sahibine makbuz gönderebilir miyim?", "a": "Evet, Premium planında: koşullarınızı ve ödeme QR kodunu içeren PDF fatura ve makbuz."},
+      {"q": "Ücretsiz mi?", "a": "En fazla 2 birim ve son bir ayın rezervasyonları süre sınırı olmadan ücretsizdir. Daha fazla kulübe için ücretli bir plana geçin."}
+    ]
+  },
+  "tools": {
+    "title": "Alet ve ekipman kiralama takip programı | Rental Planner",
+    "desc": "Alet ve ekipman kiralamalarını takip edin: her matkap ve jeneratör ayrı birim, kim aldı, ne zaman dönecek, ne kadar borç kaldı. 2 birim ücretsiz.",
+    "h1": "Alet ve ekipman kiralama takibi",
+    "lead": "Her kırıcı delici, jeneratör ve iskele ayrı bir birim: kim aldı, ne zaman dönecek ve ne kadar borç kaldı.",
+    "features_title": "İsim yazılı deftere veda edin",
+    "features": [
+      {"t": "Her parça bir birim", "d": "Matkaplar, jeneratörler, mikserler veya iskeleler: her parçanın takvimde kendi satırı var."},
+      {"t": "İade tarihleri", "d": "Her kiralamanın bir teslim ve iade tarihi var. Uygulama ekipman iadelerini size hatırlatır."},
+      {"t": "Depozitolar ve bakiyeler", "d": "Her rezervasyonda depozito, ön ödeme ve bakiye. Kimin hâlâ borcu olduğunu hemen görün."},
+      {"t": "Müşteri tabanı", "d": "Müşteriler ve kendi form alanlarınız: telefon, kimlik bilgileri veya notlar. Tekrar kiralamalar saniyeler sürer."},
+      {"t": "Çakışma kontrolü", "d": "Uygulama tarihleri çakışan rezervasyonları bulur, böylece tek bir jeneratör iki müşteriye birden söz verilmez."},
+      {"t": "Muhasebeci için Excel", "d": "Premium planında muhasebeniz için tam istatistikler ve Excel'e aktarım."}
+    ],
+    "faq": [
+      {"q": "Parça sayısında sınır var mı?", "a": "Ücretsiz plan 2 birimi, Basic 12 birime kadar kapsar, Premium ve Business planlarında sınır yoktur."},
+      {"q": "Uygulama iadeleri hatırlatıyor mu?", "a": "Evet, Premium planında: iade ve ödenmemiş bakiye hatırlatmaları zamanında gelir."},
+      {"q": "Bilgisayardan çalışabilir miyim?", "a": "Evet. Web sürümünü açın ve uygulamadaki QR kodla giriş yapın. Veriler tüm cihazlarda ortaktır."},
+      {"q": "Kiralamaları Excel'e aktarabilir miyim?", "a": "Evet, Premium planında, tam istatistiklerle birlikte."}
+    ]
+  },
+  "bikes": {
+    "title": "Motosiklet, scooter ve bisiklet kiralama programı | Rental Planner",
+    "desc": "Motosiklet, scooter ve bisiklet kiralama için rezervasyon takvimi: her araç bir birim, depozitolar, ödemeler ve mesaj şablonları. 2 birim ücretsiz.",
+    "h1": "Motosiklet ve bisiklet kiralama için rezervasyon takvimi",
+    "lead": "Tablosuz sezonluk kiralama: her araç için bir takvim, her rezervasyonda depozito ve ödemeler, müşteriler için hazır mesajlar.",
+    "features_title": "Sezona hazır",
+    "features": [
+      {"t": "Her araç için takvim", "d": "Motosikletler, scooterlar ve bisikletler ayrı birimler olarak. Herhangi bir tarihte boş araçlar bir bakışta görünür."},
+      {"t": "Depozitolar", "d": "Her rezervasyonda depozito, ön ödeme ve bakiye, ayrı bir deftere gerek yok."},
+      {"t": "Mesaj şablonları", "d": "Müşterinin adı, tarihler ve tutar otomatik doldurulur. Telegram veya WhatsApp ile tek dokunuşla gönderin."},
+      {"t": "Hatırlatmalar", "d": "Teslim, iade ve ödenmemiş bakiye hatırlatmaları, böylece hiçbir araç programdan kaybolmaz."},
+      {"t": "Araç bazında gelir", "d": "Hangi aracın en çok kazandırdığını ve paranın nereye gittiğini görün: istediğiniz dönem için birim bazında gelir ve giderler."},
+      {"t": "Ekip", "d": "Business planında yöneticiler rezervasyonları görür, finansı kimin göreceğine siz karar verirsiniz."}
+    ],
+    "faq": [
+      {"q": "Küçük bir sezonluk kiralama işi için uygun mu?", "a": "Evet. 2 birimle ücretsiz başlayın, Basic planı 12 birime kadar kapsar, Premium ve Business planlarında sınır yoktur."},
+      {"q": "Hangi aracın en çok kazandırdığını görebilir miyim?", "a": "Evet. İstatistikler istediğiniz dönem için her birimin gelir ve giderlerini gösterir."},
+      {"q": "Kiralama bilgilerini müşteriye nasıl gönderirim?", "a": "Premium planındaki mesaj şablonlarını kullanın: ad, tarihler ve tutar doldurulur, Telegram veya WhatsApp ile tek dokunuşla gönderin."},
+      {"q": "Tablette çalışır mı?", "a": "Evet, tablet desteği ve web sürümü var. Tek hesap tüm cihazlarınızda çalışır."}
+    ]
+  }
+}

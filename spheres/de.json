@@ -1,0 +1,128 @@
+{
+  "flats": {
+    "title": "Belegungskalender Ferienwohnung: App für Vermieter | Rental Planner",
+    "desc": "Belegungskalender für Kurz- und Langzeitmiete: Anreisen, Kautionen, Reinigung, Zahlungen, iCal-Sync mit Airbnb, Booking.com und Agoda. 2 Einheiten gratis.",
+    "h1": "Belegungskalender für Wohnungen und Ferienhäuser",
+    "lead": "Alle Wohnungen und alle Buchungen auf einem Bildschirm. Anreisen, Kautionen, Zahlungen und Reinigung zwischen den Gästen, ganz ohne Tabellen.",
+    "features_title": "Alles, was Gastgeber brauchen",
+    "features": [
+      {"t": "Alle Mieteinheiten in einem Kalender", "d": "Jede Wohnung, jedes Haus und jedes Zimmer auf einem Bildschirm. Freie Tage und Auslastung sehen Sie auf einen Blick."},
+      {"t": "Keine Doppelbuchungen", "d": "Die App findet Buchungen mit überlappenden Daten, bevor zwei Gäste vor derselben Tür stehen."},
+      {"t": "Airbnb, Booking.com und Agoda", "d": "Im Business-Tarif kommen Buchungen von Buchungsportalen per iCal herein, und Ihr Kalender sperrt im Gegenzug die belegten Tage."},
+      {"t": "Zahlungen und Kautionen", "d": "Anzahlungen, Restbeträge und Kautionen in jeder Buchung. Einnahmen und Ausgaben pro Mieteinheit für jeden Zeitraum."},
+      {"t": "Erinnerungen und Vorlagen", "d": "Erinnerungen an Anreisen, Abreisen und offene Beträge. Nachrichtenvorlagen setzen Name des Gastes, Daten und Betrag automatisch ein."},
+      {"t": "Co-Hosts und Manager", "d": "Laden Sie einen Manager oder einen Eigentümer ein und legen Sie fest, was jeder sieht: Buchungen, Finanzen, Ausgaben oder Kunden."}
+    ],
+    "faq": [
+      {"q": "Passt das für Kurz- und Langzeitmiete?", "a": "Ja. Eine Buchung kann eine Nacht oder mehrere Monate dauern: Kalender, Zahlungen und Erinnerungen funktionieren genauso."},
+      {"q": "Wie verbinde ich Airbnb und Booking.com?", "a": "Öffnen Sie im Business-Tarif eine Mieteinheit, tippen Sie auf „Kalendersynchronisierung“ und fügen Sie den iCal-Link vom Buchungsportal ein. Die Buchungen erscheinen nach 20-30 Minuten im Kalender, danach aktualisiert sich alles automatisch."},
+      {"q": "Wie viele Wohnungen kann ich kostenlos anlegen?", "a": "Bis zu 2 Mieteinheiten mit den Buchungen des letzten Monats, zeitlich unbegrenzt. Der Basic-Tarif umfasst bis zu 12 Mieteinheiten, Premium und Business sind unbegrenzt."},
+      {"q": "Kann auch ein Manager die App nutzen?", "a": "Ja. Fügen Sie im Business-Tarif Teammitglieder per E-Mail hinzu und geben Sie jedem eigene Mieteinheiten und Rechte: zum Beispiel Buchungen ohne Finanzen."}
+    ]
+  },
+  "cars": {
+    "title": "Software für Autovermietung mit Buchungskalender | Rental Planner",
+    "desc": "Buchungskalender für die Autovermietung: Abholung, Rückgabe, Kaution, Kilometer und Zahlungen für jedes Auto. Freie Autos auf einen Blick. 2 Autos gratis.",
+    "h1": "Autovermietung verwalten in einem Kalender",
+    "lead": "Alle Autos Ihrer Flotte auf einem Bildschirm: wer welches Auto hat, wann es zurückkommt, was bezahlt ist und was noch offen ist.",
+    "features_title": "Alles für Ihre Mietflotte",
+    "features": [
+      {"t": "Flottenkalender", "d": "Jedes Auto ist eine eigene Mieteinheit. Sehen Sie für jedes Datum, welche Autos frei sind, ohne herumzutelefonieren."},
+      {"t": "Abholung und Rückgabe", "d": "Abhol- und Rückgabezeit, Kaution und Kilometer nach Tachostand direkt in der Buchung."},
+      {"t": "Prüfung auf Überschneidungen", "d": "Die App warnt Sie, wenn sich zwei Buchungen für dasselbe Auto zeitlich überschneiden."},
+      {"t": "Zahlungen und Ausgaben", "d": "Anzahlungen und Restbeträge für jede Vermietung, dazu Ausgaben für Autowäsche, Wartung und Werbung."},
+      {"t": "Kundenstamm", "d": "Kunden und eigene Formularfelder, zum Beispiel die Führerscheinnummer. Alles bleibt für die nächste Vermietung gespeichert."},
+      {"t": "Erinnerungen", "d": "Erinnerungen an Abholungen, Rückgaben und offene Beträge, damit nichts untergeht."}
+    ],
+    "faq": [
+      {"q": "Passt das für eine kleine Flotte?", "a": "Ja. Bis zu 2 Autos sind kostenlos, der Basic-Tarif umfasst bis zu 12 Mieteinheiten, Premium und Business sind unbegrenzt."},
+      {"q": "Kann ich Kautionen und Kilometer erfassen?", "a": "Ja. Wählen Sie beim ersten Start die Autovermietung, und die Feldnamen passen sich an: Abholung, Rückgabe, Kaution und Kilometer stehen in jeder Buchung."},
+      {"q": "Können mehrere Manager mit einer Flotte arbeiten?", "a": "Ja, im Business-Tarif. Erstellen Sie ein Unternehmen, fügen Sie Manager per E-Mail hinzu und geben Sie jedem eigene Autos und Rechte."},
+      {"q": "Kann ich es am Computer nutzen?", "a": "Ja. Es gibt eine Webversion: Die Anmeldung klappt per QR-Code aus der App, ganz ohne Passwort. Daten und Abo gelten auf allen Geräten."}
+    ]
+  },
+  "boats": {
+    "title": "Buchungssoftware für Bootsverleih und Yachtcharter | Rental Planner",
+    "desc": "Buchungskalender für Bootsverleih und Yachtcharter: Abfahrt und Rückkehr, Anzahlungen, Gruppengröße und Kontakt des Skippers. Für Smartphone, Tablet und Web.",
+    "h1": "Buchungskalender für Boots- und Yachtvermietung",
+    "lead": "Abfahrten, Rückkehr und Anzahlungen für jedes Boot auf einem Bildschirm. In der Buchung stehen Gruppengröße und Kontakt des Skippers.",
+    "features_title": "Gemacht für Charter und Bootsverleih",
+    "features": [
+      {"t": "Jedes Boot im Kalender", "d": "Boote, Yachten, SUP-Boards oder Jetskis als eigene Mieteinheiten. Freie Zeiten sehen Sie sofort."},
+      {"t": "Abfahrt und Rückkehr", "d": "Abfahrts- und Rückkehrzeit in jeder Buchung, damit am Steg klar ist, wer wann rausfährt."},
+      {"t": "Gruppe und Skipper", "d": "Gruppengröße, Kontakt des Skippers und eigene Felder direkt in der Buchung."},
+      {"t": "Anzahlungen und Restbeträge", "d": "Anzahlung, Restbetrag und Kaution für jede Fahrt. Einnahmen pro Boot für jeden Zeitraum."},
+      {"t": "Rechnungen als PDF", "d": "Im Premium-Tarif senden Sie dem Kunden eine saubere Rechnung mit Ihren Bedingungen und QR-Code zum Bezahlen."},
+      {"t": "Funktioniert offline", "d": "Kein Netz am Steg? Arbeiten Sie in der App einfach weiter, alles wird synchronisiert, sobald Sie wieder online sind."}
+    ],
+    "faq": [
+      {"q": "Kann ich auch SUP-Boards und Jetskis vermieten?", "a": "Ja. Eine Mieteinheit kann alles sein: eine Yacht, ein Boot, ein SUP-Board oder ein Jetski. Legen Sie jedes einzeln an und behalten Sie die Buchungen im Kalender im Blick."},
+      {"q": "Kann ich dem Kunden eine Rechnung senden?", "a": "Ja, im Premium-Tarif: Rechnung und Beleg als PDF mit Ihren Bedingungen und QR-Code zum Bezahlen. An den Kunden senden oder ausdrucken."},
+      {"q": "Funktioniert es ohne Internet?", "a": "Ja. Kalender und Buchungen funktionieren offline, und sobald Sie wieder online sind, wird alles synchronisiert."},
+      {"q": "Ist es kostenlos?", "a": "Bis zu 2 Mieteinheiten mit den Buchungen des letzten Monats sind zeitlich unbegrenzt kostenlos. Bezahlte Tarife bringen mehr Mieteinheiten, Erinnerungen, Statistik und Belege."}
+    ]
+  },
+  "pets": {
+    "title": "Buchungssoftware für Tierpension und Hundepension | Rental Planner",
+    "desc": "Buchungskalender für Tier- und Hundepensionen: Boxen und Zimmer als Mieteinheiten, Name des Tiers, Kontakt des Halters, Erinnerungen. 2 Einheiten gratis.",
+    "h1": "Buchungskalender für Tierpensionen",
+    "lead": "Boxen und Zimmer in einem Kalender, Name des Tiers und Kontakt des Halters in jeder Buchung, dazu Erinnerungen an Ankunft und Abholung.",
+    "features_title": "Alles für einen entspannten Aufenthalt",
+    "features": [
+      {"t": "Boxen und Zimmer als Mieteinheiten", "d": "Jede Box, jeder Zwinger und jedes Zimmer ist eine eigene Mieteinheit. Freie Plätze an jedem Datum sehen Sie auf einen Blick."},
+      {"t": "Tier und Halter", "d": "Name des Tiers, Kontakt des Halters und eigene Felder: Rasse, Futter oder Impfungen."},
+      {"t": "Erinnerungen an Ankunft", "d": "Die App erinnert Sie rechtzeitig an Ankunft, Abholung und unbezahlte Aufenthalte."},
+      {"t": "Keine Überschneidungen", "d": "Zwei Tiere landen nicht in derselben Box: Die App findet überlappende Buchungen."},
+      {"t": "Zahlungen", "d": "Anzahlungen und Restbeträge für jeden Aufenthalt, Ausgaben für Futter und Zubehör, Einnahmen für jeden Zeitraum."},
+      {"t": "Zugang für Mitarbeiter", "d": "Im Business-Tarif geben Sie Mitarbeitern Zugriff auf die Buchungen und behalten die Finanzen für sich."}
+    ],
+    "faq": [
+      {"q": "Kann ich Rasse, Futter und Impfungen erfassen?", "a": "Ja. Legen Sie eigene Formularfelder an und füllen Sie sie für jedes Tier aus. Die Daten bleiben in der Kundenkarte für den nächsten Besuch gespeichert."},
+      {"q": "Können meine Mitarbeiter die App nutzen?", "a": "Ja, im Business-Tarif. Fügen Sie Mitarbeiter per E-Mail hinzu und legen Sie fest, was jeder sieht: zum Beispiel Buchungen ohne Finanzen."},
+      {"q": "Kann ich dem Halter einen Beleg senden?", "a": "Ja, im Premium-Tarif: Rechnung und Beleg als PDF mit Ihren Bedingungen und QR-Code zum Bezahlen."},
+      {"q": "Ist es kostenlos?", "a": "Bis zu 2 Mieteinheiten mit den Buchungen des letzten Monats sind zeitlich unbegrenzt kostenlos. Weitere Boxen legen Sie in einem bezahlten Tarif an."}
+    ]
+  },
+  "tools": {
+    "title": "Software für Werkzeugverleih und Gerätevermietung | Rental Planner",
+    "desc": "Werkzeug- und Gerätevermietung im Griff: jede Bohrmaschine und jeder Generator als Mieteinheit, wer sie hat, wann sie zurückkommt. 2 Einheiten gratis.",
+    "h1": "Werkzeugverleih und Gerätevermietung im Griff",
+    "lead": "Jeder Bohrhammer, jeder Generator und jedes Gerüst als eigene Mieteinheit: wer es hat, wann es zurückkommt und was noch offen ist.",
+    "features_title": "Schluss mit dem Notizbuch voller Namen",
+    "features": [
+      {"t": "Jedes Gerät als Mieteinheit", "d": "Bohrmaschinen, Generatoren, Mischer oder Gerüste: Jedes Gerät hat eine eigene Zeile im Kalender."},
+      {"t": "Rückgabetermine", "d": "Jede Vermietung hat ein Abhol- und ein Rückgabedatum. Die App erinnert Sie an die Rückgabe der Geräte."},
+      {"t": "Kautionen und Restbeträge", "d": "Kaution, Anzahlung und Restbetrag in jeder Buchung. Wer noch zahlen muss, sehen Sie sofort."},
+      {"t": "Kundenstamm", "d": "Kunden und eigene Formularfelder: Telefon, Ausweisdaten oder Notizen. Wiederholte Vermietungen sind in Sekunden erfasst."},
+      {"t": "Prüfung auf Überschneidungen", "d": "Die App findet Buchungen mit überlappenden Daten, damit ein Generator nicht zwei Kunden versprochen wird."},
+      {"t": "Excel für die Buchhaltung", "d": "Im Premium-Tarif volle Statistik und Excel-Export für Ihre Buchhaltung."}
+    ],
+    "faq": [
+      {"q": "Gibt es ein Limit für die Anzahl der Geräte?", "a": "Im kostenlosen Tarif sind es 2 Mieteinheiten, im Basic-Tarif bis zu 12, Premium und Business sind unbegrenzt."},
+      {"q": "Erinnert die App an Rückgaben?", "a": "Ja, im Premium-Tarif: Erinnerungen an Rückgaben und offene Beträge kommen rechtzeitig."},
+      {"q": "Kann ich am Computer arbeiten?", "a": "Ja. Öffnen Sie die Webversion und melden Sie sich per QR-Code aus der App an. Die Daten gelten auf allen Geräten."},
+      {"q": "Kann ich Vermietungen nach Excel exportieren?", "a": "Ja, im Premium-Tarif, zusammen mit der vollen Statistik."}
+    ]
+  },
+  "bikes": {
+    "title": "Software für Motorrad-, Roller- und Fahrradverleih | Rental Planner",
+    "desc": "Buchungskalender für Motorrad-, Roller- und Fahrradverleih: jedes Fahrzeug als Mieteinheit, Kautionen, Zahlungen, Nachrichtenvorlagen. 2 Einheiten gratis.",
+    "h1": "Buchungskalender für Motorrad- und Fahrradverleih",
+    "lead": "Saisonvermietung ohne Tabellen: ein Kalender für jedes Fahrzeug, Kautionen und Zahlungen in jeder Buchung und fertige Nachrichten für Kunden.",
+    "features_title": "Bereit für die Saison",
+    "features": [
+      {"t": "Kalender für jedes Fahrzeug", "d": "Motorräder, Roller und Fahrräder als eigene Mieteinheiten. Freie Fahrzeuge an jedem Datum auf einen Blick."},
+      {"t": "Kautionen", "d": "Kaution, Anzahlung und Restbetrag in jeder Buchung, ohne separates Notizbuch."},
+      {"t": "Nachrichtenvorlagen", "d": "Name des Kunden, Daten und Betrag werden automatisch eingesetzt. Mit einem Tipp per Telegram oder WhatsApp senden."},
+      {"t": "Erinnerungen", "d": "Erinnerungen an Abholung, Rückgabe und offene Beträge, damit kein Fahrzeug aus dem Plan verschwindet."},
+      {"t": "Einnahmen pro Fahrzeug", "d": "Sehen Sie, welches Fahrzeug am meisten einbringt und wohin das Geld geht: Einnahmen und Ausgaben pro Mieteinheit für jeden Zeitraum."},
+      {"t": "Team", "d": "Im Business-Tarif sehen Manager die Buchungen, und Sie entscheiden, wer die Finanzen sieht."}
+    ],
+    "faq": [
+      {"q": "Passt das für einen kleinen Saisonverleih?", "a": "Ja. Starten Sie kostenlos mit 2 Mieteinheiten, der Basic-Tarif umfasst bis zu 12, Premium und Business sind unbegrenzt."},
+      {"q": "Sehe ich, welches Fahrzeug am meisten einbringt?", "a": "Ja. Die Statistik zeigt Einnahmen und Ausgaben jeder Mieteinheit für jeden Zeitraum."},
+      {"q": "Wie sende ich dem Kunden die Mietdetails?", "a": "Mit Nachrichtenvorlagen im Premium-Tarif: Name, Daten und Betrag werden eingesetzt, und Sie senden alles mit einem Tipp per Telegram oder WhatsApp."},
+      {"q": "Funktioniert es auf dem Tablet?", "a": "Ja, es gibt Tablet-Unterstützung und eine Webversion. Ein Konto funktioniert auf allen Ihren Geräten."}
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "flats": {
+    "title": "Planning de réservation location saisonnière | Rental Planner",
+    "desc": "Planning des réservations courte et longue durée : arrivées, cautions, ménage, paiements, synchro iCal Airbnb, Booking.com, Agoda. Gratuit jusqu'à 2 biens.",
+    "h1": "Calendrier des réservations pour appartements et locations saisonnières",
+    "lead": "Tous vos appartements et toutes vos réservations sur un seul écran. Arrivées, cautions, paiements et ménage entre deux clients, sans tableurs.",
+    "features_title": "Tout ce qu'il faut à un hôte",
+    "features": [
+      {"t": "Tous vos biens dans un seul calendrier", "d": "Chaque appartement, maison ou chambre sur un seul écran. Dates libres et occupation se voient d'un coup d'œil."},
+      {"t": "Fini les doubles réservations", "d": "L'app repère les réservations qui se chevauchent avant que deux clients ne se retrouvent devant la même porte."},
+      {"t": "Airbnb, Booking.com et Agoda", "d": "Avec l'offre Business, les réservations des plateformes arrivent via iCal, et votre calendrier repart bloquer les dates occupées."},
+      {"t": "Paiements et cautions", "d": "Acomptes, soldes et cautions dans chaque réservation. Revenus et dépenses par bien sur n'importe quelle période."},
+      {"t": "Rappels et modèles", "d": "Rappels d'arrivée, de départ et de solde impayé. Les modèles de message reprennent le nom du client, les dates et le montant."},
+      {"t": "Co-hôtes et gestionnaires", "d": "Invitez un gestionnaire ou le propriétaire d'un bien et choisissez ce que chacun voit : réservations, finances, dépenses ou clients."}
+    ],
+    "faq": [
+      {"q": "Ça marche pour la courte comme pour la longue durée ?", "a": "Oui. Une réservation peut durer une nuit ou plusieurs mois : le calendrier, les paiements et les rappels fonctionnent de la même façon."},
+      {"q": "Comment connecter Airbnb et Booking.com ?", "a": "Avec l'offre Business, ouvrez un bien, touchez « Synchronisation des calendriers » et collez le lien iCal de la plateforme. Les réservations apparaissent dans votre calendrier sous 20 à 30 minutes, puis tout se met à jour automatiquement."},
+      {"q": "Combien d'appartements puis-je ajouter gratuitement ?", "a": "Jusqu'à 2 biens avec les réservations du dernier mois, sans limite de durée. L'offre Basic couvre jusqu'à 12 biens, Premium et Business sont illimitées."},
+      {"q": "Un gestionnaire peut-il aussi utiliser l'app ?", "a": "Oui. Avec l'offre Business, ajoutez des membres par e-mail et donnez à chacun ses propres biens et ses droits : par exemple, les réservations sans les finances."}
+    ]
+  },
+  "cars": {
+    "title": "Logiciel location de voiture et planning de flotte | Rental Planner",
+    "desc": "Planning de location de voitures : remise, retour, cautions, kilométrage et paiements, voitures libres en un coup d'œil. Gratuit jusqu'à 2 voitures.",
+    "h1": "Gestion de location de voitures dans un seul calendrier",
+    "lead": "Chaque voiture de votre flotte sur un seul écran : qui la conduit, quand elle revient, ce qui est payé et ce qui reste à encaisser.",
+    "features_title": "Tout ce qu'il faut à une flotte de location",
+    "features": [
+      {"t": "Planning de la flotte", "d": "Chaque voiture est un bien à part. Voyez quelles voitures sont libres à n'importe quelle date, sans passer de coups de fil."},
+      {"t": "Remise et retour", "d": "Heures de remise des clés et de retour, caution et kilométrage relevé au compteur, directement dans la réservation."},
+      {"t": "Contrôle des chevauchements", "d": "L'app vous avertit quand deux réservations de la même voiture se chevauchent."},
+      {"t": "Paiements et dépenses", "d": "Acomptes et soldes pour chaque location, ainsi que les dépenses de lavage, d'entretien et de publicité."},
+      {"t": "Fichier clients", "d": "Vos clients et vos propres champs de formulaire, par exemple le numéro de permis de conduire. Tout est conservé pour la prochaine location."},
+      {"t": "Rappels", "d": "Rappels de remise, de retour et de solde impayé, pour que rien ne vous échappe."}
+    ],
+    "faq": [
+      {"q": "Ça convient à une petite flotte ?", "a": "Oui. C'est gratuit jusqu'à 2 voitures, l'offre Basic couvre jusqu'à 12 biens, Premium et Business sont illimitées."},
+      {"q": "Puis-je suivre les cautions et le kilométrage ?", "a": "Oui. Choisissez la location de voitures au premier lancement et les noms des champs s'adaptent : remise, retour, caution et kilométrage figurent dans chaque réservation."},
+      {"q": "Plusieurs gestionnaires peuvent-ils travailler sur la même flotte ?", "a": "Oui, avec l'offre Business. Créez une entreprise, ajoutez des gestionnaires par e-mail et donnez à chacun ses propres voitures et ses droits."},
+      {"q": "Puis-je l'utiliser sur ordinateur ?", "a": "Oui. Il existe une version web : connectez-vous avec un QR code depuis l'app, sans mot de passe. Vos données et votre abonnement sont partagés sur tous vos appareils."}
+    ]
+  },
+  "boats": {
+    "title": "Logiciel de réservation location bateau et yacht | Rental Planner",
+    "desc": "Planning des locations de bateaux et de yachts : heures de départ et de retour, acomptes, taille du groupe et contacts du skipper. Téléphone, tablette et web.",
+    "h1": "Calendrier des réservations pour la location de bateaux et de yachts",
+    "lead": "Départs, retours et acomptes de chaque bateau sur un seul écran. La fiche de réservation garde la taille du groupe et les contacts du skipper.",
+    "features_title": "Pensé pour le charter et la location de bateaux",
+    "features": [
+      {"t": "Chaque bateau dans le calendrier", "d": "Bateaux, yachts, paddles ou jet-skis comme des biens à part. Les créneaux libres se voient tout de suite."},
+      {"t": "Départ et retour", "d": "Heures de départ et de retour dans chaque réservation, pour que le ponton sache qui sort et quand."},
+      {"t": "Groupe et skipper", "d": "Taille du groupe, contacts du skipper et vos propres champs directement dans la fiche de réservation."},
+      {"t": "Acomptes et soldes", "d": "Acompte, solde et caution pour chaque sortie. Revenus par bateau sur n'importe quelle période."},
+      {"t": "Factures en PDF", "d": "Avec l'offre Premium, envoyez au client une facture soignée avec vos conditions et un QR code de paiement."},
+      {"t": "Fonctionne hors ligne", "d": "Pas de réseau sur le ponton ? Continuez à travailler dans l'app, tout se synchronise dès que la connexion revient."}
+    ],
+    "faq": [
+      {"q": "Puis-je aussi louer des paddles et des jet-skis ?", "a": "Oui. Un bien peut être n'importe quoi : un yacht, un bateau, un paddle ou un jet-ski. Ajoutez-les un par un et suivez leurs réservations dans le calendrier."},
+      {"q": "Puis-je envoyer une facture au client ?", "a": "Oui, avec l'offre Premium : une facture et un reçu en PDF avec vos conditions et un QR code de paiement. À envoyer au client ou à imprimer."},
+      {"q": "Ça fonctionne sans internet ?", "a": "Oui. Le calendrier et les réservations fonctionnent hors ligne, et tout se synchronise dès que la connexion revient."},
+      {"q": "C'est gratuit ?", "a": "Jusqu'à 2 biens et les réservations du dernier mois sont gratuits, sans limite de durée. Les offres payantes ajoutent des biens, des rappels, des statistiques et des reçus."}
+    ]
+  },
+  "pets": {
+    "title": "Logiciel de gestion pour pension canine et féline | Rental Planner",
+    "desc": "Planning des réservations pour pensions animales : boxes et chambres, nom de l'animal, contacts du propriétaire, rappels. Gratuit jusqu'à 2 biens.",
+    "h1": "Calendrier des réservations pour pensions pour animaux",
+    "lead": "Boxes et chambres dans un seul calendrier, le nom de l'animal et les contacts du propriétaire dans chaque réservation, et des rappels d'arrivée et de départ.",
+    "features_title": "Tout pour un séjour serein",
+    "features": [
+      {"t": "Boxes et chambres comme des biens", "d": "Chaque box, enclos ou chambre est un bien à part. Les places libres à chaque date se voient d'un coup d'œil."},
+      {"t": "L'animal et son propriétaire", "d": "Le nom de l'animal, les contacts du propriétaire et vos propres champs : race, alimentation ou vaccins."},
+      {"t": "Rappels d'arrivée", "d": "L'app vous rappelle à temps les arrivées, les départs et les séjours impayés."},
+      {"t": "Aucun chevauchement", "d": "Deux animaux ne se retrouveront pas dans le même box : l'app repère les réservations qui se chevauchent."},
+      {"t": "Paiements", "d": "Acomptes et soldes pour chaque séjour, dépenses de nourriture et de fournitures, revenus sur n'importe quelle période."},
+      {"t": "Accès pour le personnel", "d": "Avec l'offre Business, donnez à votre personnel l'accès aux réservations et gardez les finances pour vous."}
+    ],
+    "faq": [
+      {"q": "Puis-je noter la race, l'alimentation et les vaccins ?", "a": "Oui. Ajoutez vos propres champs de formulaire et remplissez-les pour chaque animal. Les données restent dans la fiche client pour la prochaine visite."},
+      {"q": "Mon personnel peut-il utiliser l'app ?", "a": "Oui, avec l'offre Business. Ajoutez vos employés par e-mail et choisissez ce que chacun voit : par exemple, les réservations sans les finances."},
+      {"q": "Puis-je envoyer un reçu au propriétaire ?", "a": "Oui, avec l'offre Premium : une facture et un reçu en PDF avec vos conditions et un QR code de paiement."},
+      {"q": "C'est gratuit ?", "a": "Jusqu'à 2 biens et les réservations du dernier mois sont gratuits, sans limite de durée. Ajoutez d'autres boxes avec une offre payante."}
+    ]
+  },
+  "tools": {
+    "title": "Logiciel location de matériel et d'outillage | Rental Planner",
+    "desc": "Suivez la location de matériel : chaque perforateur et groupe électrogène est un bien, qui l'a pris, quand il revient, ce qui reste dû. Gratuit jusqu'à 2 biens.",
+    "h1": "Suivi de la location d'outillage et de matériel",
+    "lead": "Chaque perforateur, groupe électrogène et échafaudage est un bien à part : qui l'a pris, quand il revient et combien reste à payer.",
+    "features_title": "Fini le carnet plein de noms",
+    "features": [
+      {"t": "Chaque article est un bien", "d": "Perceuses, groupes électrogènes, bétonnières ou échafaudages : chaque article a sa propre ligne dans le calendrier."},
+      {"t": "Dates de retour", "d": "Chaque location a une date de départ et de retour. L'app vous rappelle les retours de matériel."},
+      {"t": "Cautions et soldes", "d": "Caution, acompte et solde dans chaque réservation. Voyez tout de suite qui vous doit encore de l'argent."},
+      {"t": "Fichier clients", "d": "Vos clients et vos propres champs de formulaire : téléphone, pièce d'identité ou notes. Relouer à un habitué prend quelques secondes."},
+      {"t": "Contrôle des chevauchements", "d": "L'app repère les réservations qui se chevauchent, pour ne pas promettre le même groupe électrogène à deux clients."},
+      {"t": "Excel pour le comptable", "d": "Avec l'offre Premium, statistiques complètes et export Excel pour votre comptabilité."}
+    ],
+    "faq": [
+      {"q": "Le nombre d'articles est-il limité ?", "a": "L'offre Gratuit couvre 2 biens, Basic jusqu'à 12, et Premium et Business sont illimitées."},
+      {"q": "L'app me rappelle-t-elle les retours ?", "a": "Oui, avec l'offre Premium : les rappels de retour et de solde impayé arrivent à temps."},
+      {"q": "Puis-je travailler depuis un ordinateur ?", "a": "Oui. Ouvrez la version web et connectez-vous avec un QR code depuis l'app. Les données sont partagées sur tous vos appareils."},
+      {"q": "Puis-je exporter les locations vers Excel ?", "a": "Oui, avec l'offre Premium, en même temps que les statistiques complètes."}
+    ]
+  },
+  "bikes": {
+    "title": "Logiciel location de motos, scooters et vélos | Rental Planner",
+    "desc": "Planning des locations de motos, scooters et vélos : chaque véhicule est un bien, cautions, paiements et modèles de message. Gratuit jusqu'à 2 biens.",
+    "h1": "Calendrier des réservations pour la location de motos et de vélos",
+    "lead": "La location saisonnière sans tableurs : un calendrier par véhicule, cautions et paiements dans chaque réservation, et des messages prêts à envoyer à vos clients.",
+    "features_title": "Prêt pour la saison",
+    "features": [
+      {"t": "Un calendrier par véhicule", "d": "Motos, scooters et vélos comme des biens à part. Les véhicules libres à chaque date, d'un coup d'œil."},
+      {"t": "Cautions", "d": "Caution, acompte et solde dans chaque réservation, sans carnet à part."},
+      {"t": "Modèles de message", "d": "Le nom du client, les dates et le montant se remplissent tout seuls. Envoyez par Telegram ou WhatsApp en un geste."},
+      {"t": "Rappels", "d": "Rappels de remise, de retour et de solde impayé, pour qu'aucun deux-roues ne disparaisse du planning."},
+      {"t": "Revenus par véhicule", "d": "Voyez quel véhicule rapporte le plus et où part l'argent : revenus et dépenses par bien sur n'importe quelle période."},
+      {"t": "Équipe", "d": "Avec l'offre Business, les gestionnaires voient les réservations, et c'est vous qui décidez qui voit les finances."}
+    ],
+    "faq": [
+      {"q": "Ça convient à une petite location saisonnière ?", "a": "Oui. Commencez gratuitement avec 2 biens, l'offre Basic couvre jusqu'à 12 biens, Premium et Business sont illimitées."},
+      {"q": "Puis-je voir quel véhicule rapporte le plus ?", "a": "Oui. Les statistiques affichent les revenus et les dépenses de chaque bien sur n'importe quelle période."},
+      {"q": "Comment envoyer les détails de la location au client ?", "a": "Utilisez les modèles de message de l'offre Premium : le nom, les dates et le montant se remplissent tout seuls, envoyez-le par Telegram ou WhatsApp en un geste."},
+      {"q": "Ça fonctionne sur tablette ?", "a": "Oui, les tablettes sont prises en charge et il existe une version web. Un seul compte fonctionne sur tous vos appareils."}
+    ]
+  }
+}
