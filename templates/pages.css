@@ -67,6 +67,7 @@ p{margin:0}
 .crumbs .ico{width:14px;height:14px}
 .hero h1{font-size:clamp(34px,9vw,44px);line-height:1.08;letter-spacing:-.032em;font-weight:700}
 .lead{margin-top:16px;font-size:18px;color:var(--ink2);max-width:40ch}
+.nf-home{margin-top:28px}
 .stores{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .store{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 18px 0 14px;border-radius:14px;background:var(--ink);color:#fff;box-shadow:0 10px 24px -12px rgba(20,26,58,.5);transition:transform .2s var(--ease)}
 .store:hover{transform:translateY(-1px)}

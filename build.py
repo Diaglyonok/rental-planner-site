@@ -604,11 +604,11 @@ def footer(lang: str, t: dict, blog_langs: set) -> str:
 
 
 def layout(lang: str, all_t: dict, ctx: dict, *, title: str, desc: str, path: str, alternates: dict,
-           main: str, ld: list, og_type: str = 'website', image: str = '') -> str:
+           main: str, ld: list, og_type: str = 'website', image: str = '', noindex: bool = False) -> str:
     t = all_t[lang]
     url = f'{SITE}{path}'
     image = image or f'{SITE}/og/{lang}.png'
-    head = [f'<link rel="canonical" href="{url}">']
+    head = ['<meta name="robots" content="noindex">' if noindex else f'<link rel="canonical" href="{url}">']
     if len(alternates) > 1:
         head += [f'<link rel="alternate" hreflang="{l}" href="{SITE}{p}">' for l, p in alternates.items()]
         if X_DEFAULT in alternates:
@@ -724,6 +724,23 @@ def blog_pages(all_t: dict, posts: dict, ctx: dict) -> dict:
     return out
 
 
+def not_found_pages(all_t: dict, ctx: dict) -> dict:
+    """404.html в папке каждого языка: хостинг отдаёт ближайшую к запрошенному адресу."""
+    out = {}
+    for lang in LANGS:
+        t = all_t[lang]
+        home = page_path(lang)
+        spheres = ''.join(f'<a href="{sphere_path(lang, k)}"><svg><use href="#i-{c["icon"]}"/></svg>{t["sph." + k]}</a>'
+                          for k, c in SPHERES.items())
+        main = (f'<section class="hero"><div class="wrap"><h1>{t["nf.title"]}</h1><p class="lead">{t["nf.text"]}</p>'
+                f'<a class="btn btn-primary nf-home" href="{home}">{t["nf.home"]}</a></div></section>'
+                f'<section class="sec" style="padding-top:0"><div class="wrap"><h2>{t["sph.title"]}</h2><nav class="others">{spheres}</nav></div></section>')
+        out[home.strip('/') + ('/' if lang != ROOT_LANG else '') + '404.html'] = layout(
+            lang, all_t, ctx, title=f'{t["nf.title"]} | {t["app.name"]}', desc=plain(lang, t['nf.text']), path=home,
+            alternates={}, main=main, ld=[], noindex=True)
+    return out
+
+
 # Файлы для поисковиков
 
 def legal_pages() -> dict:
@@ -813,10 +830,15 @@ def llms_txt(all_t: dict) -> str:
 
 def redirects() -> str:
     from urllib.parse import quote
-    lines = ['# Старые адреса сайта на Wix (формат Cloudflare Pages и Netlify)']
+    lines = ['# Старые адреса сайта на Wix (формат Cloudflare Workers, Pages и Netlify)']
     for src, dst in REDIRECTS:
         lines.append(f'{quote(src, safe="/*")}  {dst}  301')
     return '\n'.join(lines) + '\n'
+
+
+def headers() -> str:
+    return ('# Технический адрес Cloudflare *.workers.dev не должен попадать в поиск, сайт живёт на своём домене\n'
+            'https://:worker.:account.workers.dev/*\n  X-Robots-Tag: noindex\n')
 
 
 def main(require_og: bool = True) -> None:
@@ -840,6 +862,7 @@ def main(require_og: bool = True) -> None:
         files[page_file(lang)] = prerender(src, lang, all_t, blog_langs)
     files.update(sphere_pages(all_t, spheres, ctx))
     files.update(blog_pages(all_t, posts, ctx))
+    files.update(not_found_pages(all_t, ctx))
     files.update(legal_pages())
     files['admin/index.html'] = (HERE / 'admin' / 'index.html').read_text()
     files['admin/config.yml'] = (HERE / 'admin' / 'config.yml').read_text()
@@ -861,6 +884,7 @@ def main(require_og: bool = True) -> None:
     files[f'{INDEXNOW_KEY}.txt'] = INDEXNOW_KEY
     files['llms.txt'] = llms_txt(all_t)
     files['_redirects'] = redirects()
+    files['_headers'] = headers()
 
     errs = []
     for name, text in files.items():

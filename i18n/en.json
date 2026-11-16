@@ -273,6 +273,9 @@
   "blog.title": "Blog",
   "blog.sub": "Tips for hosts and rental owners: bookings, payments, expenses and how to avoid double bookings.",
   "blog.back": "All posts",
+  "nf.title": "Page not found",
+  "nf.text": "The link may be outdated or the address may have a typo. Start from the home page or pick your type of rental.",
+  "nf.home": "Go to home page",
   "_js": {
     "h1": {
       "pre": "Grow your",

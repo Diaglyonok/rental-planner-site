@@ -273,6 +273,9 @@
   "blog.title": "Blog",
   "blog.sub": "Ev sahipleri için ipuçları: rezervasyonlar, ödemeler, giderler ve çifte rezervasyondan kaçınma.",
   "blog.back": "Tüm yazılar",
+  "nf.title": "Sayfa bulunamadı",
+  "nf.text": "Bağlantı eski olabilir ya da adreste bir yazım hatası olabilir. Ana sayfadan başlayın veya kiralama türünüzü seçin.",
+  "nf.home": "Ana sayfaya dön",
   "_js": {
     "h1": {
       "pre": "",

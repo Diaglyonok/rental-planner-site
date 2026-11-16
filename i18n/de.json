@@ -273,6 +273,9 @@
   "blog.title": "Blog",
   "blog.sub": "Tipps für Vermieter: Buchungen, Zahlungen, Ausgaben und wie Sie Doppelbuchungen vermeiden.",
   "blog.back": "Alle Beiträge",
+  "nf.title": "Seite nicht gefunden",
+  "nf.text": "Der Link ist vielleicht veraltet oder die Adresse enthält einen Tippfehler. Starten Sie auf der Startseite oder wählen Sie Ihre Art der Vermietung.",
+  "nf.home": "Zur Startseite",
   "_js": {
     "h1": {
       "pre": "Ihre",

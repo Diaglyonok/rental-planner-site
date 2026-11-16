@@ -273,6 +273,9 @@
   "blog.title": "Blog",
   "blog.sub": "Dicas para anfitriões: reservas, pagamentos, despesas e como evitar reservas duplicadas.",
   "blog.back": "Todos os posts",
+  "nf.title": "Página não encontrada",
+  "nf.text": "O link pode estar desatualizado ou o endereço pode ter um erro de digitação. Comece pela página inicial ou escolha o seu tipo de aluguel.",
+  "nf.home": "Ir para a página inicial",
   "_js": {
     "h1": {
       "pre": "Reservas de",

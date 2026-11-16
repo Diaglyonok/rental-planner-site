@@ -19,8 +19,9 @@ python3 tools/indexnow.py  # после деплоя: сообщить Bing и �
 - **страницы сфер** `<lang>/<slug>/` из `spheres/<lang>.json` (6 сфер × 10 языков);
 - **блог** `<lang>/blog/` и `<lang>/blog/<slug>/` из `blog/<lang>/*.md`, только для языков, где есть посты;
 - **юридические страницы** `terms.html` и `privacy.html` из `legal/`;
+- **страницы 404** `404.html` (en) и `<lang>/404.html`: хостинг отдаёт ближайшую к запрошенному адресу, закрыты от индексации;
 - **админку блога** `admin/` (Sveltia CMS);
-- `sitemap.xml`, `robots.txt`, `llms.txt`, `_redirects`, ключ IndexNow, шрифты, скриншоты, иконки, `og/<lang>.png`.
+- `sitemap.xml`, `robots.txt`, `llms.txt`, `_redirects`, `_headers`, ключ IndexNow, шрифты, скриншоты, иконки, `og/<lang>.png`.
 
 На всех страницах: canonical, hreflang, Open Graph, разметка schema.org (приложение с рейтингом и функциями, FAQ, хлебные крошки, посты), баннер App Store для Safari на iPhone. Шрифты раздаются со своего домена, `@font-face` вшиты в страницу.
 
@@ -36,6 +37,7 @@ python3 tools/indexnow.py  # после деплоя: сообщить Bing и �
 | `spheres/<lang>.json` | Тексты страниц сфер: title, description, заголовок, 6 функций, 4 вопроса. Адреса, иконки и скриншоты сфер в `SPHERES` в `build.py` |
 | `blog/<lang>/<slug>.md` | Посты блога (Markdown с шапкой title, description, date, cover, draft). Перевод поста лежит под тем же slug в папке другого языка |
 | `admin/` | Админка блога: `index.html` грузит Sveltia CMS, `config.yml` её настройки |
+| `wrangler.jsonc` | Настройки Cloudflare Workers: раздавать `dist/` как статику, 404 и адреса без `.html` |
 | `templates/` | Общий шаблон (`layout.html`) и стили (`pages.css`) страниц сфер и блога |
 | `mdlite.py` | Markdown в HTML для постов, без зависимостей |
 | `legal/` | Условия использования и политика конфиденциальности (только английский): `page.html` шаблон, `terms.html` и `privacy.html` тексты. Перенесены с Wix как есть |
@@ -72,7 +74,7 @@ python3 tools/indexnow.py  # после деплоя: сообщить Bing и �
 Чтобы админка заработала:
 
 1. Репозиторий: [Diaglyonok/rental-planner-site](https://github.com/Diaglyonok/rental-planner-site), он указан в `admin/config.yml` (`backend.repo`).
-2. Подключить хостинг (Cloudflare Pages или Netlify) к репозиторию: команда сборки `python3 build.py`, папка `dist`.
+2. Подключить хостинг к репозиторию, см. «Деплой».
 3. Вход: каждый автор может войти по personal access token GitHub (кнопка «Sign In Using Access Token»). Для входа кнопкой «Sign In with GitHub» развернуть [Sveltia CMS Authenticator](https://github.com/sveltia/sveltia-cms-auth) на Cloudflare Workers и указать его адрес в `backend.base_url`. Авторам нужен доступ на запись в репозиторий.
 
 Длинное тире в постах запрещено, как и везде: поля админки подсвечивают его ошибкой, а сборка с ним падает.
@@ -84,9 +86,24 @@ python3 tools/indexnow.py  # после деплоя: сообщить Bing и �
 
 ## Деплой
 
-Сайт рассчитан на `https://www.rentalplanner.io` (константа `SITE` в `build.py`). Публикуется содержимое `dist/` на любой статичный хостинг. `_redirects` понимают Cloudflare Pages и Netlify: там 301-редиректы со старых адресов сайта на Wix (страницы сфер, посты блога, FAQ).
+Сайт рассчитан на `https://www.rentalplanner.io` (константа `SITE` в `build.py`) и живёт на Cloudflare Workers как статика: своего кода у Worker нет, он раздаёт `dist/`. Бесплатного плана хватает с запасом. Настройки в `wrangler.jsonc`.
 
-`/terms` и `/privacy` собираются в `terms.html` и `privacy.html`: Cloudflare Pages и Netlify отдают их по старым адресам без `.html`, `preview.py` делает так же.
+Первый запуск (один раз, в панели Cloudflare):
+
+1. Workers & Pages → Create → Import a repository → `Diaglyonok/rental-planner-site`, ветка `main`.
+2. Имя проекта `rental-planner-site`, как `name` в `wrangler.jsonc`. Команда сборки `python3 build.py`, команда деплоя `npx wrangler deploy` (по умолчанию).
+3. Проверить сайт на техническом адресе `rental-planner-site.<аккаунт>.workers.dev`: он закрыт от поиска заголовком из `_headers`.
+4. Переключить домен: в DNS удалить запись `www`, которая ведёт на Wix, затем в Worker → Settings → Domains & Routes → Add → Custom Domain добавить `www.rentalplanner.io`. DNS-запись и сертификат Cloudflare создаст сам. Для `rentalplanner.io` без `www` сделать Redirect Rule на `https://www.rentalplanner.io`.
+
+Дальше каждый коммит в `main` (в том числе пост из админки) собирается и выкладывается сам за минуту-две.
+
+Как раздаётся сайт:
+
+- `_redirects`: 301 со старых адресов сайта на Wix (страницы сфер, посты блога, FAQ). Формат понимают Cloudflare Workers, Pages и Netlify;
+- `/terms` и `/privacy` отдают `terms.html` и `privacy.html`, адрес без `.html`;
+- несуществующий адрес получает ближайший `404.html` со статусом 404: `/de/...` отдаёт немецкую страницу, остальные английскую.
+
+`preview.py` повторяет это локально, кроме редиректов.
 
 После переключения домена с Wix:
 

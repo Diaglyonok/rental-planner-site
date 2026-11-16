@@ -273,6 +273,9 @@
   "blog.title": "Blog",
   "blog.sub": "Conseils pour les loueurs&nbsp;: réservations, paiements, dépenses et comment éviter les doubles réservations.",
   "blog.back": "Tous les articles",
+  "nf.title": "Page introuvable",
+  "nf.text": "Le lien est peut-être obsolète ou l'adresse contient une faute de frappe. Commencez par la page d'accueil ou choisissez votre type de location.",
+  "nf.home": "Retour à l'accueil",
   "_js": {
     "h1": {
       "pre": "Location de",

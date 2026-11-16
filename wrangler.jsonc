@@ -1,0 +1,14 @@
+// Cloudflare Workers: раздаёт собранный сайт из dist/ как статику, своего кода у Worker нет.
+// Сборку запускает Workers Builds: команда сборки python3 build.py, команда деплоя npx wrangler deploy.
+// Имя должно совпадать с именем Worker в панели Cloudflare, иначе сборка падает.
+{
+  "name": "rental-planner-site",
+  "compatibility_date": "2026-11-16",
+  "assets": {
+    "directory": "./dist",
+    // /terms отдаёт terms.html, /ru/blog отдаёт /ru/blog/ (307)
+    "html_handling": "auto-trailing-slash",
+    // Несуществующий адрес получает ближайший 404.html: /de/... отдаёт /de/404.html
+    "not_found_handling": "404-page"
+  }
+}
