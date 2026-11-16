@@ -5,10 +5,9 @@ backend:
   name: github
   repo: Diaglyonok/rental-planner-site
   branch: main
-  # Вход через GitHub OAuth для нескольких авторов: разверни Sveltia CMS Authenticator
-  # (https://github.com/sveltia/sveltia-cms-auth) на Cloudflare Workers и укажи его адрес.
-  # Без этого в админку можно войти по personal access token GitHub.
-  # base_url: https://sveltia-cms-auth.<account>.workers.dev
+  # Кнопка «Sign In with GitHub» работает через Sveltia CMS Authenticator
+  # (https://github.com/sveltia/sveltia-cms-auth) на Cloudflare Workers и GitHub App.
+  base_url: https://sveltia-cms-auth.diaglyonok.workers.dev
 
 site_url: https://www.rentalplanner.io
 media_folder: assets/blog

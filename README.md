@@ -75,7 +75,7 @@ python3 tools/indexnow.py  # после деплоя: сообщить Bing и �
 
 1. Репозиторий: [Diaglyonok/rental-planner-site](https://github.com/Diaglyonok/rental-planner-site), он указан в `admin/config.yml` (`backend.repo`).
 2. Подключить хостинг к репозиторию, см. «Деплой».
-3. Вход: каждый автор может войти по personal access token GitHub (кнопка «Sign In Using Access Token»). Для входа кнопкой «Sign In with GitHub» развернуть [Sveltia CMS Authenticator](https://github.com/sveltia/sveltia-cms-auth) на Cloudflare Workers и указать его адрес в `backend.base_url`. Авторам нужен доступ на запись в репозиторий.
+3. Вход кнопкой «Sign In with GitHub» идёт через [Sveltia CMS Authenticator](https://github.com/sveltia/sveltia-cms-auth): Worker `sveltia-cms-auth` на Cloudflare (его адрес в `backend.base_url`) и GitHub App, установленный на репозиторий. В Worker заданы `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET` (секрет) и `ALLOWED_DOMAINS`. Авторам нужен аккаунт GitHub с доступом на запись в репозиторий.
 
 Длинное тире в постах запрещено, как и везде: поля админки подсвечивают его ошибкой, а сборка с ним падает.
 
