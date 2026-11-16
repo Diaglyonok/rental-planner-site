@@ -35,7 +35,7 @@ python3 tools/indexnow.py  # после деплоя: сообщить Bing и �
 | `i18n/ru.json` | Русские данные: title, description, тексты блога и данные для JS (печатающийся заголовок, объекты и гости шахматки) |
 | `i18n/<lang>.json` | Остальные языки: все ключи `data-i` / `data-ia` + блок `_js` |
 | `spheres/<lang>.json` | Тексты страниц сфер: title, description, заголовок, 6 функций, 4 вопроса. Адреса, иконки и скриншоты сфер в `SPHERES` в `build.py` |
-| `blog/<lang>/<slug>.md` | Посты блога (Markdown с шапкой title, description, date, cover, draft). Перевод поста лежит под тем же slug в папке другого языка |
+| `blog/<lang>/<slug>.md` | Посты блога (Markdown с шапкой title, description, date, updated, cover, draft). Перевод поста лежит под тем же slug в папке другого языка |
 | `admin/` | Админка блога: `index.html` грузит Sveltia CMS, `config.yml` её настройки |
 | `wrangler.jsonc` | Настройки Cloudflare Workers: раздавать `dist/` как статику, 404 и адреса без `.html` |
 | `templates/` | Общий шаблон (`layout.html`) и стили (`pages.css`) страниц сфер и блога |

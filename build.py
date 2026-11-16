@@ -25,7 +25,7 @@ EMAIL = 'info@dglfactor.tech'
 APP_STORE = 'https://apps.apple.com/app/id1631552064'
 APP_STORE_RU = 'https://apps.apple.com/ru/app/id1631552064'
 GOOGLE_PLAY = 'https://play.google.com/store/apps/details?id=com.github.diaglyonok.realtor_manage_app'
-WEB_APP = 'https://realtor-manage-app.web.app'
+WEB_APP = 'https://app.rentalplanner.io'
 TG_CHANNEL = 'https://t.me/rentalplanner'
 TG_BOT = 'https://t.me/rental_planner_bot?start=contact'
 API_DOCS = 'https://rp-api.dglfactor.tech/docs/rental-planner-api'
@@ -420,14 +420,18 @@ LANG_SCRIPT = '''<script>
 </script>'''
 
 
-def json_ld(lang: str, t: dict) -> str:
-    cur = 'RUB' if lang == 'ru' else 'USD'
-    table = PRICES['rub' if lang == 'ru' else 'usd']
-    org = {
+def org_ld(lang: str) -> dict:
+    return {
         '@type': 'Organization', '@id': f'{SITE}/#org', 'name': 'DGL Factor', 'url': f'{SITE}/',
         'logo': f'{SITE}/icon-512.png', 'email': EMAIL,
         'sameAs': [APP_STORE, GOOGLE_PLAY] + ([TG_CHANNEL] if lang == 'ru' else []),
     }
+
+
+def json_ld(lang: str, t: dict) -> str:
+    cur = 'RUB' if lang == 'ru' else 'USD'
+    table = PRICES['rub' if lang == 'ru' else 'usd']
+    org = org_ld(lang)
     app = {
         '@type': 'SoftwareApplication', '@id': f'{page_url(lang)}#app', 'name': t['app.name'],
         'description': plain(lang, t['meta.desc']), 'url': page_url(lang), 'inLanguage': lang,
@@ -529,15 +533,48 @@ def load_blog() -> dict:
             if meta.get('draft') == 'true':
                 continue
             errs += [f'blog/{lang}/{f.name}: нет поля {k}' for k in ('title', 'description', 'date') if not meta.get(k)]
+            date = meta.get('date', '')[:10]
             posts.setdefault(lang, []).append({
                 'slug': f.stem, 'title': meta.get('title', ''), 'description': meta.get('description', ''),
-                'date': meta.get('date', '')[:10], 'cover': meta.get('cover', ''), 'html': mdlite.to_html(body),
+                'date': date, 'updated': max(date, meta.get('updated', '')[:10]),
+                'cover': meta.get('cover', ''), 'html': mdlite.to_html(body),
             })
     if errs:
         raise SystemExit('\n'.join(errs))
     for items in posts.values():
         items.sort(key=lambda x: x['date'], reverse=True)
     return posts
+
+
+def image_size(src: str):
+    """(ширина, высота) картинки блога по её адресу на сайте, из заголовка файла WebP, PNG или JPEG."""
+    if not src.startswith('/media/blog/'):
+        return None
+    f = HERE / 'assets' / 'blog' / src[len('/media/blog/'):]
+    if not f.is_file():
+        return None
+    b = f.read_bytes()
+    if b[:4] == b'RIFF' and b[8:12] == b'WEBP':
+        if b[12:16] == b'VP8 ':
+            return int.from_bytes(b[26:28], 'little') & 0x3fff, int.from_bytes(b[28:30], 'little') & 0x3fff
+        if b[12:16] == b'VP8L':
+            v = int.from_bytes(b[21:25], 'little')
+            return (v & 0x3fff) + 1, ((v >> 14) & 0x3fff) + 1
+        if b[12:16] == b'VP8X':
+            return int.from_bytes(b[24:27], 'little') + 1, int.from_bytes(b[27:30], 'little') + 1
+    if b[:8] == b'\x89PNG\r\n\x1a\n':
+        return int.from_bytes(b[16:20], 'big'), int.from_bytes(b[20:24], 'big')
+    if b[:2] == b'\xff\xd8':
+        i = 2
+        while i + 9 < len(b):
+            marker, length = b[i + 1], int.from_bytes(b[i + 2:i + 4], 'big')
+            if marker in (0xC0, 0xC1, 0xC2):
+                return int.from_bytes(b[i + 7:i + 9], 'big'), int.from_bytes(b[i + 5:i + 7], 'big')
+            i += 2 + length
+    return None
+
+
+mdlite.image_size = image_size
 
 
 def fmt_date(lang: str, iso: str) -> str:
@@ -604,7 +641,8 @@ def footer(lang: str, t: dict, blog_langs: set) -> str:
 
 
 def layout(lang: str, all_t: dict, ctx: dict, *, title: str, desc: str, path: str, alternates: dict,
-           main: str, ld: list, og_type: str = 'website', image: str = '', noindex: bool = False) -> str:
+           main: str, ld: list, og_type: str = 'website', image: str = '', noindex: bool = False,
+           meta: tuple = ()) -> str:
     t = all_t[lang]
     url = f'{SITE}{path}'
     image = image or f'{SITE}/og/{lang}.png'
@@ -619,7 +657,7 @@ def layout(lang: str, all_t: dict, ctx: dict, *, title: str, desc: str, path: st
         f'<meta property="og:type" content="{og_type}">', f'<meta property="og:site_name" content="{attr(t["app.name"])}">',
         f'<meta property="og:title" content="{attr(title)}">', f'<meta property="og:description" content="{attr(desc)}">',
         f'<meta property="og:url" content="{url}">', f'<meta property="og:image" content="{image}">',
-        f'<meta property="og:locale" content="{OG_LOCALE[lang]}">', '<meta name="twitter:card" content="summary_large_image">',
+        f'<meta property="og:locale" content="{OG_LOCALE[lang]}">', *meta, '<meta name="twitter:card" content="summary_large_image">',
         '<script type="application/ld+json">'
         + json.dumps({'@context': 'https://schema.org', '@graph': ld}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
         + '</script>',
@@ -697,8 +735,8 @@ def blog_pages(all_t: dict, posts: dict, ctx: dict) -> dict:
         ld = [{'@type': 'Blog', '@id': f'{SITE}{index}', 'url': f'{SITE}{index}', 'name': plain(lang, t['blog.title']),
                'description': plain(lang, t['blog.sub']), 'inLanguage': lang, 'publisher': {'@id': f'{SITE}/#org'},
                'blogPost': [{'@type': 'BlogPosting', 'headline': p['title'], 'url': f'{SITE}{index}{p["slug"]}/',
-                             'datePublished': p['date']} for p in items]},
-              crumbs_ld([(plain(lang, n), pth) for n, pth in trail])]
+                             'datePublished': p['date'], 'dateModified': p['updated']} for p in items]},
+              org_ld(lang), crumbs_ld([(plain(lang, n), pth) for n, pth in trail])]
         alternates = {l: blog_path(l) for l in posts}
         out[index.strip('/') + '/index.html'] = layout(
             lang, all_t, ctx, title=f'{html.unescape(t["blog.title"])} | {t["app.name"]}', desc=plain(lang, t['blog.sub']),
@@ -706,7 +744,9 @@ def blog_pages(all_t: dict, posts: dict, ctx: dict) -> dict:
         for p in items:
             path = f'{index}{p["slug"]}/'
             url = f'{SITE}{path}'
-            cover = f'<img class="cover" src="{p["cover"]}" alt="" width="1200" height="675" fetchpriority="high">' if p['cover'] else ''
+            w, h = image_size(p['cover']) or (1200, 675)
+            cover = (f'<img class="cover" src="{p["cover"]}" alt="{attr(p["title"])}" width="{w}" height="{h}" fetchpriority="high">'
+                     if p['cover'] else '')
             main = (f'<section class="sec" style="padding-top:28px"><div class="wrap narrow">'
                     f'<a class="back" href="{index}"><svg class="ico" style="transform:scaleX(-1)"><use href="#i-chev"/></svg>{t["blog.back"]}</a>'
                     f'<article class="article"><h1>{html.escape(p["title"])}</h1>'
@@ -714,13 +754,21 @@ def blog_pages(all_t: dict, posts: dict, ctx: dict) -> dict:
                     f'<div class="prose">{p["html"]}</div></article></div></section>' + cta_block(lang, t))
             image = f'{SITE}{p["cover"]}' if p['cover'] else f'{SITE}/og/{lang}.png'
             ld = [{'@type': 'BlogPosting', '@id': url, 'url': url, 'mainEntityOfPage': url, 'headline': p['title'],
-                   'description': p['description'], 'datePublished': p['date'], 'inLanguage': lang, 'image': image,
+                   'description': p['description'], 'datePublished': p['date'], 'dateModified': p['updated'],
+                   'inLanguage': lang, 'image': image,
                    'author': {'@id': f'{SITE}/#org'}, 'publisher': {'@id': f'{SITE}/#org'}, 'isPartOf': {'@id': f'{SITE}{index}'}},
+                  org_ld(lang),
                   crumbs_ld([(plain(lang, t['app.name']), page_path(lang)), (plain(lang, t['blog.title']), index), (p['title'], path)])]
             alternates = {l: f'{blog_path(l)}{p["slug"]}/' for l, li in posts.items() if any(x['slug'] == p['slug'] for x in li)}
+            # Название приложения в title, только пока он влезает в выдачу поисковика (около 60 знаков)
+            title = f'{p["title"]} | {t["app.name"]}'
+            if len(title) > 60:
+                title = p['title']
+            meta = (f'<meta property="article:published_time" content="{p["date"]}">',
+                    f'<meta property="article:modified_time" content="{p["updated"]}">')
             out[path.strip('/') + '/index.html'] = layout(
-                lang, all_t, ctx, title=f'{p["title"]} | {t["app.name"]}', desc=p['description'], path=path,
-                alternates=alternates, main=main, ld=ld, og_type='article', image=image)
+                lang, all_t, ctx, title=title, desc=p['description'], path=path,
+                alternates=alternates, main=main, ld=ld, og_type='article', image=image, meta=meta)
     return out
 
 
@@ -837,14 +885,17 @@ def redirects() -> str:
 
 
 def headers() -> str:
+    # Шрифты, скриншоты и картинки меняются редко: браузер держит их месяц, страницы всегда проверяет заново
+    cache = ''.join(f'/{d}/*\n  Cache-Control: public, max-age=2592000\n' for d in ('fonts', 'shots', 'media', 'og'))
     return ('# Технический адрес Cloudflare *.workers.dev не должен попадать в поиск, сайт живёт на своём домене\n'
-            'https://:worker.:account.workers.dev/*\n  X-Robots-Tag: noindex\n')
+            'https://:worker.:account.workers.dev/*\n  X-Robots-Tag: noindex\n' + cache)
 
 
 def main(require_og: bool = True) -> None:
     src = (HERE / 'src.html').read_text()
     symbols = '\n'.join(symbol(n, f) for n, f in ICONS.items())
     src = src.replace('%%ICON_SYMBOLS%%', symbols).replace('%%SQUIGGLE%%', squiggle())
+    src = src.replace('%%WEB_APP%%', WEB_APP).replace('%%WEB_HOST%%', WEB_APP.split('//')[1])
     src = src.replace('%%PRICES%%', json.dumps(PRICES)).replace('%%RUB_PER_USD%%', str(RUB_PER_USD))
     all_t = load_locales(src)
     spheres = load_spheres()
@@ -874,10 +925,10 @@ def main(require_og: bool = True) -> None:
     sphere_mtime = mtime(*(HERE / 'spheres').glob('*.json'), *i18n_files)
     entries += [(sphere_path(l, k), {x: sphere_path(x, k) for x in LANGS}, sphere_mtime) for k in SPHERES for l in LANGS]
     for lang, items in posts.items():
-        entries.append((blog_path(lang), {x: blog_path(x) for x in posts}, items[0]['date']))
+        entries.append((blog_path(lang), {x: blog_path(x) for x in posts}, max(p['updated'] for p in items)))
         for p in items:
             alts = {x: f'{blog_path(x)}{p["slug"]}/' for x, li in posts.items() if any(y['slug'] == p['slug'] for y in li)}
-            entries.append((f'{blog_path(lang)}{p["slug"]}/', alts, p['date']))
+            entries.append((f'{blog_path(lang)}{p["slug"]}/', alts, p['updated']))
     entries += [(f'/{name}', {}, '') for name in LEGAL]
     files['sitemap.xml'] = sitemap(entries)
     files['robots.txt'] = robots()

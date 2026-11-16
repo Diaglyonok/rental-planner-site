@@ -6,6 +6,16 @@
 import html
 import re
 
+# Размер картинки по её адресу: (ширина, высота) или None. build.py подставляет свою функцию,
+# чтобы у картинок были width и height и страница не прыгала при загрузке
+image_size = lambda src: None
+
+
+def img(src: str, alt: str) -> str:
+    size = image_size(src)
+    dims = f' width="{size[0]}" height="{size[1]}"' if size else ''
+    return f'<img src="{src}" alt="{alt}"{dims} loading="lazy">'
+
 
 def front_matter(text: str) -> tuple:
     """Разбирает YAML-шапку из простых пар ключ: значение. Возвращает (поля, тело)."""
@@ -33,7 +43,7 @@ def inline(s: str) -> str:
     s = re.sub(r'`([^`]+)`', keep_code, s)
     s = html.escape(s, quote=False)
     s = re.sub(r'!\[([^\]]*)\]\(([^)\s]+)\)',
-               lambda m: f'<img src="{m.group(2)}" alt="{m.group(1)}" loading="lazy">', s)
+               lambda m: img(m.group(2), m.group(1)), s)
 
     def link(m):
         href = m.group(2)

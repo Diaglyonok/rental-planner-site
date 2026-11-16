@@ -52,6 +52,13 @@ collections:
         widget: datetime
         type: date
         i18n: duplicate
+      - label: Дата обновления
+        name: updated
+        widget: datetime
+        type: date
+        required: false
+        i18n: duplicate
+        hint: Ставь, когда заметно переписал пост, поисковики покажут его как свежий
       - label: Обложка
         name: cover
         widget: image
